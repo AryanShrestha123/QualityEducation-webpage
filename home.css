@@ -1,0 +1,134 @@
+body {
+    text-align: center;
+}
+
+/* Header Section */
+.main-text {
+    background-color: #c42d2d;
+    color: white;
+    padding: 150px 20px;
+}
+
+.main-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.main-text p {
+    margin: 10px 300px;
+    font-size: 16px;
+}
+
+/* Courses Section */
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: -60px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.content-card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-card:hover{
+    transform: translateY(-7px);
+    transition: transform 0.3s;
+}
+
+.content-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.overlay h3 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.overlay p{
+    font-size: 12px;
+    margin: 0px 5px;
+}
+
+
+/* Learn More Button */
+.button-container {
+    margin-bottom: 40px;
+}
+
+.learn-more {
+    padding: 12px 25px;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.learn-more:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Commitment */
+.commitment {
+    background-color: rgb(174, 174, 174);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.commitment h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* What we do */
+.what-we-do {
+    padding: 40px;
+    text-align: center;
+}
+
+.what-we-do-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.activity {
+    width: 25%;
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.activity h3 {
+    color: #333;
+}
+
+.activity p {
+    color: #666;
+}

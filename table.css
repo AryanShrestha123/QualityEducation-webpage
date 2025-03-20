@@ -1,0 +1,52 @@
+/* Main Content */
+main {
+    margin: 30px 100px;
+}
+
+/* Table Styling */
+.table-container {
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #7b4d4d;
+    color: white;
+}
+
+/* Alternate row colors */
+tbody .even{
+    background-color: #f2f2f2;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+} */

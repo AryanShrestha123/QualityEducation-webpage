@@ -1,0 +1,76 @@
+main{
+    display: flex;
+    justify-content: center;
+    margin:20px;
+}
+
+fieldset{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+legend{
+    font-weight: bold;
+}
+
+.feedback-form {
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 50%; /* Increased width */
+    background-color: white;
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 28px; /* Larger font size */
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px; /* Larger font size */
+    color: rgb(85, 85, 85);
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[id="country"], input[type="file"], textarea, select {
+    width: 95%;
+    padding: 6px 6px; 
+    margin-bottom: 10px;
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 10px;
+    font-size: 16px; /* Larger font size */
+}
+
+.rating {
+    display: flex;
+    justify-content: space-around;
+}
+
+.radio-group label {
+    margin-bottom: 2px;    margin-right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    background: rgb(40, 167, 69);
+    color: white;
+    padding: 10px;
+    border: rgb(40, 167, 69) solid 2px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background: transparent;
+    color: rgb(40, 167, 69);
+}
+
+input:invalid {
+    border-color: red;
+}

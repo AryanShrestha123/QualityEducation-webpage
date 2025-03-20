@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Quality Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Quality Education</div>
+        <nav>
+            <ul>
+                <li><a href="splash.html">Splash</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="feedback-form">
+            <h2>Feedback Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required maxlength="50" title="Please enter your full name" placeholder="Enter full name">
+        
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required title="Please enter a valid email" placeholder="Enter email">
+        
+                    <label for="tel">Phone Number:</label>
+                    <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" title="Enter a 10-digit phone number" placeholder="Enter phonr number">
+                
+                    <label for="country">Country:</label>
+                    <input id="country" name="country"></input>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Feedback Details</legend>
+                    <label for="options">Choose your message type:</label>
+                    <select id="options" name="options">
+                        <option value="suggestion">Suggestion</option>
+                        <option value="complaint">Complaint</option>
+                        <option value="inquiry">Inquiry</option>
+                    </select>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" maxlength="500" title="Max 500 characters" placeholder="Your message!!"></textarea>
+        
+                    <label for="rating">Rate Us:</label>
+                    <div class="rating" style="margin-top: 10px;">
+                        <label for="star1">1</label>
+                        <label for="star2">2</label>
+                        <label for="star3">3</label>
+                        <label for="star4">4</label>
+                        <label for="star5">5</label>
+                    </div>
+                    <div class="rating">
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <input type="radio" id="star5" name="rating" value="5">
+                    </div>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label>Was this your first time visiting us?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="first_visit" value="yes">Yes</label>
+                        <label><input type="radio" name="First_visit" value="no">No</label>
+                    </div>
+        
+                    <br><label>Was this website easy to navigate?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="easy_navigation" value="yes" checked>Yes</label>
+                        <label><input type="radio" name="easy_navigation" value="no">No</label>
+                    </div>  
+
+                    <br><label>Receive Emails?</label><br>
+                    <input type="checkbox" name="receive_emails"> Yes, subscribe me!
+        
+                    <br><br><label for="date">Select Date:</label><br>
+                    <input type="datetime-local" id="date" name="date">
+        
+                    <br><br><label for="upload">Upload File:</label>
+                    <input type="file" id="upload" name="upload">
+                </fieldset>
+
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="editor-block">
+                <p class="head">Editor Profile</p>
+                <p>This feedback page was designed by student 3.</p>
+                <p>For further information, click the link below to go to the editor's page of student 3</p>
+                <a href="pageEditor_ST3.html">Editor's Page</a>
+            </div>
+
+            <div class="footer-nav">
+                <p class="head">Navigation</p>
+                <ul>
+                    <li><a href="splash.html">Splash Page</a></li>
+                    <li><a href="home.html">Home Page</a></li>
+                    <li><a href="volunteer.html">Volunteer Page</a></li>
+                    <li><a href="table.html">Table Page</a></li>
+                    <li><a href="profile.html">User Profile Page</a></li>
+                    <li><a href="feedback.html">Feedback Page</a></li>
+                    <li><a href="sitemap.html">Sitemap Page</a></li>
+                    <li><a href="team.html">Team Page</a></li>
+                </ul>
+            </div>
+            <div class="team">
+                <p class="head">Team Members</p>
+                <ul>
+                    <li><a href="pageEditor_ST1.html">Ankit Paudel</a></li>
+                    <li><a href="pageEditor_ST2.html">Aryan Shrestha</a></li>
+                    <li><a href="pageEditor_ST3.html">Bijay Bikram Dahal</a></li>
+                    <li><a href="pageEditor_ST4.html">Kaushal Khatri</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

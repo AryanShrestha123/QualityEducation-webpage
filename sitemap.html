@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap - Quality Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h2{
+            margin-top: 20px;
+        }
+        h2,p{
+            margin-left: 20px;
+        }
+        rect{
+            rx: 20px;
+            ry: 20px;
+            height: 50px;
+            stroke:black;
+        }
+        .main-pages{
+            fill:#b45252; 
+        }
+        .content-pages{
+            fill:rgb(91, 35, 86);
+        }
+        .editor-page{
+            fill:rgb(7, 82, 125);
+        }
+        rect:hover{
+            fill:black;
+        }
+        .sitemap-container{
+                display: flex;
+                justify-content: center;
+                margin-top: 100px;
+            }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Quality Education</div>
+        <nav>
+            <ul>
+                <li><a href="splash.html">Splash</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html" class="active">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Website Sitemap</h2>
+        <p>This sitemap visually represents the navigation structure of our website in a vertical format.</p>
+
+        <!-- SVG Vertical Sitemap -->
+        <div class="sitemap-container">
+            <svg width="1000" height="900">
+                <!-- Splash Screen -->
+                <a href="splash.html">
+                <rect x="375" y="10" width="150" fill="#4CAF50" stroke="black"/>
+                <text x="400" y="40" fill="white">Splash Screen</text>
+                </a>
+
+                <!-- Main Line-->
+                <line x1="450" y1="60" x2="450" y2="730" stroke="black"/>
+
+                <!-- Home Page -->
+                <a href="home.html">
+                <rect x="490" y="100" width="120" class="main-pages"/>
+                <text x="525" y="130" fill="white">Home</text>
+                </a>
+
+                <!-- Line for home page -->
+                <line x1="450" y1="130" x2="490" y2="130" stroke="black"/>
+
+                <!-- Line for content Pages -->
+                <line x1="550" y1="150" x2="550" y2="530" stroke="black"/>
+
+                <line x1="550" y1="230" x2="770" y2="230" stroke="black"/>
+                <line x1="550" y1="330" x2="770" y2="330" stroke="black"/>
+                <line x1="550" y1="430" x2="770" y2="430" stroke="black"/>
+                <line x1="550" y1="530" x2="770" y2="530" stroke="black"/>
+
+                <!-- Content Pages -->
+                <a href="content_St1.html">
+                <rect x="600" y="200" width="120" class="content-pages"/>
+                <text x="625" y="230" fill="white">Content 1</text>
+                </a>
+
+                <a href="content_St2.html">
+                <rect x="600" y="300" width="120" class="content-pages"/>
+                <text x="625" y="330" fill="white">Content 2</text>
+                </a>
+
+                <a href="content_St3.html">
+                <rect x="600" y="400" width="120" class="content-pages"/>
+                <text x="625" y="430" fill="white">Content 3</text>
+                </a>
+
+                <a href="content_St4.html">
+                <rect x="600" y="500" width="120" class="content-pages"/>
+                <text x="625" y="530" fill="white">Content 4</text>
+                </a>
+
+                <!-- Other Required Lines -->
+                <line x1="450" y1="230" x2="230" y2="230" stroke="black"/>
+                <line x1="450" y1="330" x2="230" y2="330" stroke="black"/>
+                <line x1="450" y1="430" x2="230" y2="430" stroke="black"/>
+                <line x1="450" y1="530" x2="230" y2="530" stroke="black"/>
+                <line x1="450" y1="630" x2="230" y2="630" stroke="black"/>
+                <line x1="450" y1="730" x2="230" y2="730" stroke="black"/>
+
+                <!-- Other Pages -->
+                <a href="volunteer.html">
+                <rect x="290" y="200" width="120" height="50" class="main-pages"/>
+                <text x="315" y="230" fill="white">Volunteer</text>
+                </a>
+
+                <a href="table.html">
+                <rect x="290" y="300" width="120" height="50" class="main-pages"/>
+                <text x="330" y="330" fill="white">Table</text>
+                </a>
+
+                <a href="profile.html">
+                <rect x="290" y="400" width="120" height="50" class="main-pages"/>
+                <text x="310" y="430" fill="white">User Profile</text>
+                </a>
+
+                <a href="feedback.html">
+                <rect x="290" y="500" width="120" height="50" class="main-pages"/>
+                <text x="320" y="530" fill="white">Feedback</text>
+                </a>
+
+                <a href="sitemap.html">
+                <rect x="290" y="600" width="120" height="50" class="main-pages"/>
+                <text x="320" y="630" fill="white">Sitemap</text>
+                </a>
+
+                <a href="team.html">
+                <rect x="290" y="700" width="120" height="50" class="main-pages"/>
+                <text x="330" y="730" fill="white">Team</text>
+                </a>
+
+                <!-- Editor's Pages -->
+                <a href="pageEditor_ST1.html">
+                <rect x="90" y="200" width="160" class="editor-page"/>
+                <text x="110" y="230" fill="white">ST1 Editor Page</text>
+                </a>
+
+                <a href="pageEditor_ST2.html">
+                <rect x="90" y="300" width="160" class="editor-page"/>
+                <text x="110" y="330" fill="white">ST2 Editor Page</text>
+                </a>
+
+                <a href="pageEditor_ST4.html">
+                <rect x="90" y="400" width="160" class="editor-page"/>
+                <text x="110" y="430" fill="white">ST4 Editor Page</text>
+                </a>
+
+                <a href="pageEditor_ST3.html">
+                <rect x="90" y="500" width="160" class="editor-page"/>
+                <text x="110" y="530" fill="white">ST3 Editor Page</text>
+                </a>
+
+                <a href="pageEditor_ST4.html">
+                <rect x="90" y="600" width="160" class="editor-page"/>
+                <text x="110" y="630" fill="white">ST4 Editor Page</text>
+                </a>
+
+                <a href="pageEditor_ST3.html">
+                <rect x="90" y="700" width="160" class="editor-page"/>
+                <text x="110" y="730" fill="white">ST3 Editor Page</text>
+                </a>
+
+                <!-- Editors page after content page -->
+                <a href="pageEditor_ST1.html">
+                <rect x="770" y="200" width="160" class="editor-page"/>
+                <text x="790" y="230" fill="white">ST1 Editor Page</text>
+                </a>
+
+                <a href="pageEditor_ST2.html">
+                <rect x="770" y="300" width="160" class="editor-page"/>
+                <text x="790" y="330" fill="white">ST2 Editor Page</text>
+                </a>
+
+                <a href="pageEditor_ST3.html">
+                <rect x="770" y="400" width="160" class="editor-page"/>
+                <text x="790" y="430" fill="white">ST3 Editor Page</text>
+                </a>
+
+                <a href="pageEditor_ST4.html">
+                <rect x="770" y="500" width="160" class="editor-page"/>
+                <text x="790" y="530" fill="white">ST4 Editor Page</text>
+                </a>
+            </svg>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="editor-block">
+                <p class="head">Editor Profile</p>
+                <p>This sitemap page was designed by student 4.</p>
+                <p>For further information, click the link below to go to the editor's page of student 4</p>
+                <a href="pageEditor_ST4.html">Editor's Page</a>
+            </div>
+
+            <div class="footer-nav">
+                <p class="head">Navigation</p>
+                <ul>
+                    <li><a href="splash.html">Splash Page</a></li>
+                    <li><a href="home.html">Home Page</a></li>
+                    <li><a href="volunteer.html">Volunteer Page</a></li>
+                    <li><a href="table.html">Table Page</a></li>
+                    <li><a href="profile.html">User Profile Page</a></li>
+                    <li><a href="feedback.html">Feedback Page</a></li>
+                    <li><a href="sitemap.html">Sitemap Page</a></li>
+                    <li><a href="team.html">Team Page</a></li>
+                </ul>
+            </div>
+            <div class="team">
+                <p class="head">Team Members</p>
+                <ul>
+                    <li><a href="pageEditor_ST1.html">Ankit Paudel</a></li>
+                    <li><a href="pageEditor_ST2.html">Aryan Shrestha</a></li>
+                    <li><a href="pageEditor_ST3.html">Bijay Bikram Dahal</a></li>
+                    <li><a href="pageEditor_ST4.html">Kaushal Khatri</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
