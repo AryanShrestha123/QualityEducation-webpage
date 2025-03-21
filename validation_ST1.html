@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality edication- Validation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .validation-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .validation-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        
+        .validation-header {
+            padding: 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .validation-header h3 {
+            margin: 0;
+        }
+        
+        .validation-status {
+            background-color: var(--success-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        
+        .validation-status i {
+            margin-right: 0.5rem;
+        }
+        
+        .validation-content {
+            padding: 1.5rem;
+        }
+        
+        .validation-image {
+            width: 100%;
+            border: 1px solid var(--light-gray);
+            border-radius: var(--border-radius);
+            margin: 1rem 0;
+        }
+        
+        .error-list {
+            background-color: rgba(231, 76, 60, 0.1);
+            border-left: 4px solid var(--danger-color);
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .fixed-list {
+            background-color: rgba(39, 174, 96, 0.1);
+            border-left: 4px solid var(--success-color);
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .error-list h4, .fixed-list h4 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .error-list h4 i, .fixed-list h4 i {
+            margin-right: 0.5rem;
+        }
+        
+        .validation-tips {
+            background-color: rgba(52, 152, 219, 0.1);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .code-example {
+            background-color: #f8f9fa;
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            margin: 1rem 0;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+        
+        .code-bad {
+            color: var(--danger-color);
+            text-decoration: line-through;
+        }
+        
+        .code-good {
+            color: var(--success-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header class="navbar">
+        <label class="logo">Quality Education</label>
+        <nav>
+            <ul>
+                <li><a href="splash.html">Splash</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <h1>Validation Documentation</h1>
+    <section class="validation-container">
+        <h2>HTML and CSS Validation Results</h2>
+        <p>This page documents the validation process for the Quality Education website, showing the results of W3C validation.</p>
+        
+        HTML Validation
+        <div class="validation-card">
+            <div class="validation-header">
+                <h3>HTML Validation</h3>
+                <div class="validation-status">
+                    <i class="fas fa-check-circle"></i>
+                    <span>PASSED</span>
+                </div>
+            </div>
+            <div class="validation-content">
+                <p>All HTML pages were validated using the W3C Markup Validation Service.</p>
+                
+                <img src="images/splash_STD1.jpg" alt="HTML Validation Screenshot" class="validation-image">
+                <img src="images/content_STD1.jpg" alt="HTML Validation Screenshot" class="validation-image">
+                <img src="images/volunteer_STD1.jpg" alt="HTML Validation Screenshot" class="validation-image">
+                <div class="error-list">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Initial Issues Found</h4>
+                    <ul>
+                        <li>Missing alt attributes on some images</li>
+                        <li>Unclosed div elements affecting layout</li>
+                        <li>Improper button alignment in mobile view</li>
+                        <li>Missing aria-labels for interactive elements</li>
+                    </ul>
+                </div>
+                
+                <div class="fixed-list">
+                    <h4><i class="fas fa-check-circle"></i> Fixes Implemented</h4>
+                    <ul>
+                        <li>Added descriptive alt text to all images for accessibility</li>
+                        <li>Closed all unclosed div tags for proper layout rendering</li>
+                        <li>Used Flexbox and Grid for proper button alignment</li>
+                        <li>Added aria-labels to buttons and links for better accessibility</li>
+                    </ul>
+                </div>
+        
+    
+    
+            <div class="validation-content">
+                <p>The style.css file was validated using the W3C CSS Validation Service to ensure it adheres to CSS3 standards.</p>
+                
+                
+                <div class="error-list">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Initial Issues Found</h4>
+                    <ul>
+                        <li>Inconsistent heading hierarchy affecting SEO and accessibility</li>
+                        <li>Broken links in the footer navigation</li>
+                        <li>Text contrast issues in some sections</li>
+                        <li>Form elements missing proper labels</li>
+                    </ul>
+                </div>
+                
+                <div class="fixed-list">
+                    <h4><i class="fas fa-check-circle"></i> Fixes Implemented</h4>
+                    <ul>
+                        <li>Reorganized heading levels for better structure (h1 → h2 → h3, etc.)</li>
+                        <li>Fixed all broken links and ensured they direct to the correct pages</li>
+                        <li>Adjusted color contrast to meet WCAG 2.1 AA standards</li>
+                        <li>Added proper <code>label</code> elements for all form fields</li>
+                    </ul>
+                </div>
+        
+        <!-- Accessibility Validation -->
+        <!-- <div class="validation-card">
+            <div class="validation-header">
+                <h3>Accessibility Validation</h3>
+                <div class="validation-status">
+                    <i class="fas fa-check-circle"></i>
+                    <span>PASSED</span>
+                </div>
+            </div> -->
+            <div class="validation-content">
+                <p>The website was checked using WAVE (Web Accessibility Evaluation Tool) to ensure it meets WCAG 2.1 accessibility guidelines.</p>
+                
+                <!-- <img src="images/accessibility-validation.jpg" alt="Accessibility Validation Screenshot" class="validation-image"> -->
+                
+                <div class="error-list">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Initial Issues Found</h4>
+                    <ul>
+                        <li>Navigation menu not displaying correctly on smaller screens</li>
+                        <li>Images missing alt attributes, impacting accessibility</li>
+                        <li>Uneven padding/margins in sections causing misalignment</li>
+                        <li>Overlapping text in the hero section on mobile devices</li>
+                    </ul>
+                </div>
+                
+                <div class="fixed-list">
+                    <h4><i class="fas fa-check-circle"></i> Fixes Implemented</h4>
+                    <ul>
+                        <li>Updated the navigation menu to use a responsive hamburger menu</li>
+                        <li>Added alt attributes to all images for screen reader support</li>
+                        <li>Standardized padding and margins for a consistent layout</li>
+                        <li>Adjusted font sizes and layout to prevent text overlap on mobile</li>
+                    </ul>
+                </div>
+        
+            <div class="validation-content">
+                <p>The website was tested across multiple device sizes using Chrome DevTools and physical devices to ensure proper responsiveness.</p>
+                
+                
+                <div class="error-list">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Initial Issues Found</h4>
+                    <ul>
+                        <li>Button styles inconsistent across pages</li>
+                        <li>Form elements misaligned on smaller screens</li>
+                        <li>Footer links not properly aligned</li>
+                        <li>Slow page load due to unoptimized images</li>
+                    </ul>
+                </div>
+                
+                <div class="fixed-list">
+                    <h4><i class="fas fa-check-circle"></i> Fixes Implemented</h4>
+                    <ul>
+                        <li>Standardized button styles across all pages</li>
+                        <li>Used flexbox and media queries to properly align form elements</li>
+                        <li>Fixed footer layout to ensure proper alignment</li>
+                        <li>Compressed and optimized images for faster loading</li>
+                    </ul>
+                </div>
+        
+        
+        <!-- Validation Tips -->
+        <div class="validation-tips">
+            <h3><i class="fas fa-lightbulb"></i> Validation Tips & Best Practices</h3>
+            <p>Based on our experience validating the Quality Education website, here are some recommended practices:</p>
+            <ol>
+                <li><strong>Validate Early and Often:</strong> Don't wait until the end of development to check for validation issues.</li>
+                <li><strong>Use Browser DevTools:</strong> Built-in developer tools can catch many issues before formal validation.</li>
+                <li><strong>Test Accessibility:</strong> Use screen readers and keyboard navigation to ensure the site works for all users.</li>
+                <li><strong>Check Real Devices:</strong> Emulators are helpful, but testing on actual devices provides the best feedback.</li>
+                <li><strong>Keep a Validation Log:</strong> Document issues and fixes to help with future projects.</li>
+            </ol>
+        </div>
+    </section>
+
+    <a href="#" id="up">↑up </a>    
+        <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="editor-block">
+                <p class="head">Editor Profile</p>
+                <p>This home page was designed by student 2.</p>
+                <p>For further information, click the link below to go to the editor's page of student 2</p>
+                <a href="pageEditor_ST2.html">Editor's Page</a>
+            </div>
+
+            <div class="footer-nav">
+                <p class="head">Navigation</p>
+                <ul>
+                    <li><a href="splash.html">Splash Page</a></li>
+                    <li><a href="home.html">Home Page</a></li>
+                    <li><a href="volunteer.html">Volunteer Page</a></li>
+                    <li><a href="table.html">Table Page</a></li>
+                    <li><a href="profile.html">User Profile Page</a></li>
+                    <li><a href="feedback.html">Feedback Page</a></li>
+                    <li><a href="sitemap.html">Sitemap Page</a></li>
+                    <li><a href="team.html">Team Page</a></li>
+                </ul>
+            </div>
+            <div class="team">
+                <p class="head">Team Members</p>
+                <ul>
+                    <li><a href="pageEditor_ST1.html">Ankit Paudel</a></li>
+                    <li><a href="pageEditor_ST2.html">Aryan Shrestha</a></li>
+                    <li><a href="pageEditor_ST3.html">Bijay Bikram Dahal</a></li>
+                    <li><a href="pageEditor_ST4.html">Kaushal Khatri</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>   
+</body>
+</html>

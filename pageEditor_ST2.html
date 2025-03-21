@@ -3,48 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volunteer - Clean Water and Sanitation</title>
+    <title>Quality Education:Quality education euqality</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+
+        /* Page Layout */
+        main{
+            display: flex;
+        }
+
+        .editor-nav {
+            position: fixed;
+            left: 10px;
+            top: 80px;
+            width: 10%; /* Adjust width as needed */
+            height: 50%;
+            background-color: #d8b4b4; /* Light pinkish background */
+            padding: 10px;
+        }
+
+        .editor-nav h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .editor-nav .links {
+            display: flex;
+            flex-direction: column; /* Stack links vertically */
+        }
+
+        .editor-nav .links a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 8px;
+            text-decoration: none;
+            color: purple;
+            font-weight: bold;
+        }
+
+        .editor-nav .links a:hover {
+            text-decoration: underline;
+            background-color: rgba(196, 45, 45, 0.7); /* Light red background on hover */
+            color: white;
+            border-radius: 5px;
+        }
+
+
+        .page-container{
+            background-color: rgb(245, 245, 245);
+            max-width: 80%;
+            margin:20px;
+            margin-left: 15%;
+
+        }
+
+        .editor-title h2{
+            padding: 20px 0px;
+            margin-bottom:20px;
+            background-color: #c42d2db6;
+            text-align: center;
+        }
+
+        .editor-section {
+            margin-bottom: 40px;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.1);
+            padding:20px;
+        }
+
+        h3{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h4{
+            font-size: 16px;
+        }
+
+        .editor-section ul {
+            text-align: left;
+            padding-left: 40px; 
+        }
+        .editor-section h3{
+            text-align: center  ;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo_text">
-            <img src="logo.png" alt="logo">
-            <h1>Clean Water and Sanitation</h1>
-        </div>
+    <!-- Navigation Menu -->
+    <header class="navbar">
+        <div class="logo">Quality Education</div>
         <nav>
-            <table>
-                <tr>
-                    <th><a href="home.html">Home</a></th>
-                    <th><a href="volunteer.html">Volunteer</a></th>
-                    <th><a href="table.html">Table</a></th>
-                    <th><a href="profile.html">User Profile</a></th>
-                    <th><a href="feedback.html">Feedback</a></th>
-                    <th><a href="sitemap.html">Sitemap</a></th>
-                    <th><a href="team.html">Team</a></th>
-                </tr>
-            </table>
+            <ul>
+                <li><a href="splash.html">Splash</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <section id="volunteer">
-            <h2>Page Editor- ST2</h2>
-            <p>
-                Our mission is to ensure clean and accessible water for all. We focus on improving water quality, reducing pollution, and providing sustainable solutions for water management.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec libero et velit suscipit fermentum vel ac nulla. Fusce varius risus at orci aliquet, sed venenatis justo condimentum. Integer facilisis elit nec lorem pharetra, ut dignissim lacus bibendum.
-            </p>
-            <p>
-                Curabitur sagittis metus in felis aliquet malesuada. Praesent elementum, sapien eget ultricies bibendum, sapien erat fermentum odio, a tincidunt arcu libero nec justo. Nulla facilisi.
-            </p>
-            <p>
-                We believe in collaboration, innovation, and sustainable practices to tackle the challenges of water scarcity and sanitation. Join us in making a difference.
-            </p>
-        </section>
+    
+    <main class="main-content">
+        <div class="editor-nav">
+            <section class="links">
+                <h2>Navigation</h2>
+                <a href="#website-tempelete">Website Tepmlete</a>
+                <a href="#home-page">Home Page</a>
+            </section>
+            
+
+        </div>
+        <!-- Main Content Area -->
+        <div class="page-container">
+            <section class="editor-title">
+                <h2>Aryan Shrestha (Editor's Page)</h2>
+            </section>
+            <section id="website-tempelete" class="editor-section">
+                <h3>Website templete and global CSS</h3>
+                <h4>Navigation Bar</h4>
+                <p>The Navigation Bar serves as the primary means for users to explore different sections of the website. It is designed to be fixed, ensuring accessibility at all times while maintaining a structured layout.</p>
+                <p>The Navigation bar is structured using semantic HTML5 tags to ensure clarity and accessibility.</p>
+                <p><b>Key Features:</b></p>
+                <ul>
+                    <li><b>Fixed Positioning: </b>Stays visible at the top of the page even when scrolling. of different pages.</li>
+                    <li><b>Active Link Highlighting: </b> The currently active page is visually distinct.</li>
+                    <li><b>Semantic Structure: </b> Improves SEO and accessibility.</li>
+                </ul>
+                <br>
+                <hr>
+                <br>
+                
+                <h4>Footer</h4>
+                <p>The footer serves as a global navigation and information section at the bottom of every page. It provides:</p>
+                <p>It displays the editor of the page, link to the respective editor's page, navigation links same as in the header, team members with their editor page.</p>
+                <hr>
+                <br>
+                
+                <h4>Key HTML elements:</h4>
+                <ul>
+                    <li><b>&lt;header&gt;: </b>Wraps the entire navigation structure.</li>
+                    <li><b>&lt;nav&gt;: </b>Contains the navigation links for better accessibility of different pages.</li>
+                    <li><b>&lt;ul&gt; and &lt;li&gt;: </b>Organize menu items in a structured list format.</li>
+                    <li><b>&lt;a&gt;: </b>Provide links to different sections of the website, ensuring seamless navigation.</li>
+                    <li><b>Class Names: </b>Used for targeted styling via CSS.</li>
+                </ul>
+                <br>
+                <hr>
+                <br>
+
+                <h4>CSS Techniques</h4>
+                <p>CSS is used to style the layout, colors, typography, and effects. The goal is to create a visually appealing and cohesive design that aligns with our theme and enhances user experience.</p>
+                <p>The global css file is linked to every single page as it styles the navigation bar, footer, and a little layout for the main section.</p>
+                
+                <br><p><b>Key CSS properties include:</b></p>
+                <ul>
+                    <li><b>Flexbox:</b> Centers the main content and navigation menu, ensuring adaptability to various screen sizes.</li>
+                    <li><b>Media Queries:</b> Makes the page fully responsive for desktops, tablets, and mobile devices.</li>
+                    <li><b>Transitions and Animations:</b> Adds subtle hover effects and smooth scroll behaviour for enhanced user interaction.</li>
+                    <li><b>Box Shadow and Border Radius:</b> Creates depth and a modern look for cards and buttons.</li>
+                </ul>
+                <br>
+                <hr>
+                <br>
+
+                <h4>Purpose of Key Tags and Styling</h4>
+                <ul>
+                    <li><b>&lt;header&gt;</b> and <b>&lt;nav&gt;</b>: Provide a clear, accessible navigation system for an enhanced user experience.</li>
+                    <li><b>Flexbox</b>: Ensure a responsive, visually appealing layout adaptable to various screen sizes.</li>
+                    <li><b>Media Queries</b>: Enable full responsiveness, ensuring accessibility across all devices.</li>
+                    <li><b>Semantic HTML Tags</b>: Improve accessibility and SEO, making the page easy to navigate and understand.</li>
+                </ul><br><hr><br>
+
+                <h4>Accessibility Features</h4>
+                <p>The Home Page is designed with accessibility in mind. Key features include:</p>
+                <ul>
+                    <li>Descriptive alt text for all images, ensuring screen readers can convey the content to visually impaired users.</li>
+                    <li>Proper contrast ratios for text and background colors, making the content readable for users with visual impairments.</li>
+                    <li>ARIA labels for interactive elements, such as buttons and links, to improve navigation for users relying on assistive technologies.</li>
+                </ul><br><hr><br>
+
+                <h4>Compliance</h4>
+                <p>The website layout complies with Janet regulations and web standards. It uses semantic HTML5 tags, includes descriptive alt text for images, and adheres to accessibility guidelines. The page has been validated using the W3C Validator, ensuring it meets industry standards for HTML and CSS.</p>
+                <br>
+            </section>
+
+            <section id="home-page" class="editor-section">
+                <h3>Home Page</h3>
+                <p>The Home page is the key page of the website as it introduces users to the core message of the website, providing informative content about Quality Education and Sustainable Development Goal (SDG) 4.</p>
+                <p>It adapts the global css file and aligns with the theme of the website. It includes introduction, links to content pages in form of cards, a learn more button that scrolls to the commitment section, and what we do section.</p>
+                <br>
+                <hr>
+                <br>
+
+                <h4>Key HTML elements:</h4>
+                <ul>
+                    <li><b>&lt;main&gt;</b>: Wraps the main content of the page.</li>
+                    <li><b>&lt;section&gt;</b>: Defines different content sections (Intro, Featured Content, Commitment, etc.).</li>
+                    <li><b>&lt;h1&gt;</b>, <b>&lt;h2&gt;</b> and <b>&lt;h2&gt;</b>: Used for headings to establish a clear content hierarchy.</li>
+                    <li><b>&lt;p&gt;</b>: Tags for descriptive text, ensuring readability.</li>
+                    <li><b>&lt;a&gt;</b>: Creates hyperlinks for navigation and interactive elements.</li>
+                    <li><b>&lt;img&gt;</b>: Displays images with descriptive alt attributes for accessibility.</li>
+                    <li><b>&lt;div&gt;</b>: Used for structuring content (e.g., wrapping content cards, buttons, and layout containers).</li>
+                    <li><b>&lt;button&gt;</b>: Used for Learn More button.</li>
+                </ul>
+                <br><hr><br>
+
+                <h4>CSS Techniques</h4>
+                <p>The Home Page is styled using modern CSS techniques to create a visually appealing and responsive design. The page features a consistent color scheme and typography that aligns with the overall theme of the website.</p>
+                <p><b>Key CSS properties include:</b></p>
+                <ul>
+                    <li><b>Flexbox:</b> Used for flexible, responsive layouts.</li>
+                    <li><b>Trasition and transform:</b> Enables smooth animations and hover effects.</li>
+                    <li><b>Media Queries:</b> Ensure the page is fully responsive for desktops, tablets, and mobile devices.</li>
+                    <li><b>Box Shadow and Border Radius:</b> Add depth and a modern look to sections.</li>
+                </ul><br><hr><br>
+
+                <h4>Purpose of Key Tags and Styling</h4>
+                <ul>
+                    <li><b>justify-content & align-items:</b> Aligns elements properly within sections for a clean and professional design.</li>
+                    <li><b>Flexbox:</b> Ensure the layout is visually appealing and functional, adapting to various devices and screen sizes.</li>
+                    <li><b>Pseudo classes, transition & transform:</b> Adds smooth hover effects and interactive animations.</li>
+                    <li><b>Semantic HTML Tags:</b> Improve accessibility and SEO, ensuring the page is easy to navigate and understand.</li>
+                </ul>
+                <br><hr><br>
+
+                <h4>Accessibility Features:</h4>
+                <ul>
+                    <li>alt attributes in img tags - Provides descriptive text for visually impaired users using screen readers.</li>
+                    <li>Proper contrast ratios for text and background colors, making the content readable for users.</li>
+                    <li>ARIA labels - Enhances screen reader interpretation of buttons and links.</li>
+                    <li>Use of nav and header - Helps screen readers identify key navigation sections.</li>
+                </ul>
+                <br><hr><br>
+
+                <h4>Challenges and Lessons Learned</h4>
+                <p>One challenge during the development of the Table Page was ensuring the data tables remained readable and visually appealing on smaller screens. This was resolved by using media queries to adjust the table layout for mobile devices. Another challenge was organizing the large amount of data into a coherent structure, which was addressed by using clear headings and color-coded rows. These experiences emphasized the importance of responsive design and effective data presentation in web development.</p>
+                <br><hr><br>
+
+                <h4>Compliance</h4>
+                <p>The Table Page complies with Janet regulations and web standards. It uses semantic HTML5 tags, includes descriptive alt text for images, and adheres to accessibility guidelines. The page has been validated using the W3C Validator, ensuring it meets industry standards for HTML and CSS.</p>
+                <br><hr><br>
+
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="home.html" target="_blank">View Home Page</a></li>
+                    <li><a href="validation_ST2.html" target="_blank">Validation Report for Home Page</a></li>
+                </ul>
+                <br>
+                <hr>
+                <br>
+                <p>By combining a clean design, responsive layout, and accessibility features, the Home Page effectively introduces users to the website and reflects the overall theme of the project while providing a seamless and enjoyable user experience.</p>
+            </section>
+        </div>
     </main>
+  
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Your Organization. All rights reserved.</p>
-    </footer>
+        <div class="footer-container">
+            <div class="editor-block">
+                <p class="head">Editor Profile</p>
+                <p>This is Editor Page of Student 1</p>
+                <p>Click the link below to go to the validation page of student 1.</p>
+                <a href="validation_ST1.html">Editor's Page</a>
+            </div>
+
+            <div class="footer-nav">
+                <p class="head">Navigation</p>
+                <ul>
+                    <li><a href="splash.html">Splash Page</a></li>
+                    <li><a href="home.html">Home Page</a></li>
+                    <li><a href="volunteer.html">Volunteer Page</a></li>
+                    <li><a href="table.html">Table Page</a></li>
+                    <li><a href="profile.html">User Profile Page</a></li>
+                    <li><a href="feedback.html">Feedback Page</a></li>
+                    <li><a href="sitemap.html">Sitemap Page</a></li>
+                    <li><a href="team.html">Team Page</a></li>
+                </ul>
+            </div>
+            <div class="team">
+                <p class="head">Team Members</p>
+                <ul>
+                    <li><a href="pageEditor_ST1.html">Ankit Paudel</a></li>
+                    <li><a href="pageEditor_ST2.html">Aryan Shrestha</a></li>
+                    <li><a href="pageEditor_ST3.html">Bijay Bikram Dahal</a></li>
+                    <li><a href="pageEditor_ST4.html">Kaushal Khatri</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>   
 </body>
 </html>

@@ -8,122 +8,213 @@
     <style>
 
         /* Page Layout */
-        main{
+        .page-container {
             display: flex;
-        }
-
-        .editor-nav {
-            position: fixed;
-            left: 10px;
-            top: 80px;
-            width: 10%; /* Adjust width as needed */
-            height: 50%;
-            background-color: #d8b4b4; /* Light pinkish background */
-            padding: 10px;
-        }
-
-        .editor-nav h2 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: black;
-        }
-
-        .editor-nav .links {
-            display: flex;
-            flex-direction: column; /* Stack links vertically */
-        }
-
-        .editor-nav .links a {
-            display: block;
-            margin-bottom: 10px;
-            padding: 8px;
-            text-decoration: none;
-            color: purple;
-            font-weight: bold;
-        }
-
-        .editor-nav .links a:hover {
-            text-decoration: underline;
-            background-color: rgba(196, 45, 45, 0.7); /* Light red background on hover */
-            color: white;
-            border-radius: 5px;
-        }
-
-
-        .page-container{
+            align-items: center;
+            justify-content: center;
             background-color: rgb(245, 245, 245);
-            max-width: 80%;
-            margin:20px;
-            margin-left: 15%;
-
+            max-width: 100%;
+            margin: 0 auto;
         }
 
-        .editor-title h2{
-            padding: 20px 0px;
-            margin-bottom:20px;
-            background-color: #c42d2db6;
-            text-align: center;
+        /* Main Content Area */
+        .main-content {
+            flex-grow: 1; 
+            padding: 2px;
+            margin-left: 20px;
+            overflow-x: hidden;
+            max-width: 65%;
+            align-items: center;
         }
 
+        /* Resources Sections */
         .editor-section {
             margin-bottom: 40px;
-            border-radius: 15px;
-            background-color: rgba(0, 0, 0, 0.1);
-            padding:20px;
+            padding-left: 80px;
+            padding: 20px auto;
+            border-radius: 1.2%;
+           
+            background-color: var(--light-color);
         }
 
-        h3{
+        .editor-section h2, p, h3, h4{
             text-align: center;
-            margin-bottom: 10px;
-        }
-
-        h4{
-            font-size: 16px;
+            text-align: justify;
+            align-items: center;
+            max-width: 90%;
         }
 
         .editor-section ul {
             text-align: left;
+            list-style-type: disc;
+            max-width: 90%;
             padding-left: 40px; 
         }
         .editor-section h3{
             text-align: center  ;
         }
+
+        /* Image Styling */
+        .resource-image {
+            width: 85%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            margin: 20px 0;
+            box-shadow: var(--box-shadow);
+        }
+
+        /* Go to Top Button */
+        #go-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 15px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            transition: var(--transition);
+            z-index: 20;
+        }
+
+        #go-to-top:hover {
+            background-color: var(--primary-color);
+        }
+        #kaushal{
+            color: var(--primary-color);
+            text-align: center;
+            margin: 0 auto;
+            padding: auto;
+        }
+        #kaushal strong{
+            color: var(--secondary-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .page-container {
+                flex-direction: column;
+            }
+
+            .internal-nav {
+                width: 100%;
+                height: auto;
+                position: static;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .internal-nav a {
+                margin: 5px;
+                padding: 10px;
+            }
+        }
     </style>
+
 </head>
 <body>
     <!-- Navigation Menu -->
-    <header class="navbar">
-        <div class="logo">Quality Education</div>
-        <nav>
-            <ul>
-                <li><a href="splash.html">Splash</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="table.html">Table</a></li>
-                <li><a href="profile.html">User Profile</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="team.html">Team</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header class="navbar">
+            <label class="logo">Quality Education</label>
+            <nav>
+                <ul>
+                    <li><a href="splash.html">Splash</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </nav>
+        </header>
     
-    <main class="main-content">
-        <div class="editor-nav">
-            <section class="links">
-                <h2>Navigation</h2>
-                <a href="#sitemap-page">Sitemap</a>
-                <a href="#profile-page">User Profile</a>
-                <a href="#content-page">Content</a>
-            </section>
-            
+    <div class="page-container">
+        <main class="main-content">
+            <!-- Resources Sections -->
+             <section class="editor-section">
+                <h2 id="Kaushal">Kaushal khatri [4] <strong>Editor's Page</strong></h2> 
+                
+             </section>
+            <section id="Quality Education" class="editor-section">
+                <h3>User Profile</h3><br
+                        <p>The HTML code for the User Profile page is organized into a header, main content, and footer, each of which is composed of various HTML tags that contribute to the overall layout, design, and interactivity of the page.</p>
+                <hr><br>
 
-        </div>
-        <!-- Main Content Area -->
-        <div class="page-container">
-            <section class="editor-title">
-                <h2>Kaushal Khatri (Editor's Page)</h2>
+
+                <h4>HTML Techniques</h4>
+                <p>The User Profile page is structured using semantic HTML5 tags for better readability and accessibility. The <code>&lt;header&gt;</code> tag contains the site's title and navigation menu, while the <code>&lt;main&gt;</code> tag houses the primary content, including the user's information and interactive elements. The <code>&lt;footer&gt;</code> tag provides additional links, credits, and contact details.</p><br>
+                <p><strong>Key HTML elements include:</strong></p>
+                        <ul>
+                            <li><code>&lt;nav&gt;</code>: Provides navigation links to essential sections such as Dashboard, Settings, and Profile.</li>
+                            <li><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>: Define headings to create a structured content hierarchy.</li>
+                            <li><code>&lt;p&gt;</code>: Used for paragraphs to maintain readability and structure.</li>
+                            <li><code>&lt;a&gt;</code>: Hyperlinks that allow seamless navigation across different sections and pages.</li>
+                            <li><code>&lt;img&gt;</code>: Displays user profile pictures with descriptive alt attributes for accessibility.</li>
+                            <li><code>&lt;button&gt;</code>: Enables interactive actions such as editing profile details and saving changes.</li>
+                            </ul><br> <hr><br>
+
+
+
+                <h4>CSS Techniques</h4>
+                <p>The page utilizes modern CSS styling to ensure a visually appealing and responsive design. Flexbox and Grid are used to align elements efficiently, while media queries make the layout adaptable to different screen sizes. The color scheme and typography align with the overall theme of the website.</p>
+                <p><strong>Key CSS properties include:</strong></p>
+                <ul>
+                    <li>A flexbox layout for the overall profile container</li>
+                    <li>A card-based design with distinct sections for different types of information</li>
+                    <li>A circular profile image using border-radius: 50%</span></li>
+                    <li>Custom styling for the skill bars with progress indicators</li>
+                    <li>A responsive contact form with hover effects on the button</li>
+                    <li>Consistent spacing and typography throughout the profile</li>
+                </ul><hr><br>
+
+                <h4>Contact form</h4>
+                <ul>
+                    <li>Uses appropriate input types (<code>text</code>, <code>email</code>) for different data</li>
+                    <li>Includes placeholder text for user guidance</li>
+                    <li>Uses the <code>required</code> attribute for form validation</li>
+                    <li>Provides a submit button using the semantic <code>&lt;button&gt;</code> element</li>
+                </ul><br><hr><br>
+
+                <h4>Profile Section</h4>
+                <p>The  Pages designed with accessibility in mind. Key features include:</p>
+                <ul>
+                    <li>Uses semantic <code>&lt;section&gt;</code> elements to organize different types of information</li>
+                    <li>Implements skill bars with nested <code>&lt;div&gt;</code> elements and inline width styling to create visual progress indicators</li>
+                    <li>Lists experiences and supported UN goals using unordered lists</li>
+                    <li>Maintains consistent heading hierarchy with <code>&lt;h3&gt;</code> tags for section titles</li>
+                </ul><br><hr><br>
+
+                <h4>Calender</h4>
+                <p>....................................................</p><br><hr><br>
+
+                <h4>Challenges and Lessons Learned</h4>
+                <p>This User Profile page demonstrates effective use of HTML and CSS to create a modern, card-based user profile. It follows many best practices in web development, including semantic HTML structure, responsive design considerations, and consistent styling.
+                The page appears to be part of a student project related to UN Sustainable Development Goals, with a focus on Quality Education. The profile showcases a volunteer's information, skills, experience, and supported UN goals, along with a contact form for engagement.
+                With a few minor improvements to correct grammatical errors and complete form functionality, this would be a highly effective user profile implementation.</p><br><hr><br>
+                
+                <h4>Compliance</h4>
+                <p>Compliance with accessibility standards is demonstrated through the use of semantic HTML elements, ARIA attributes, and proper alt text for images. The page has been validated using the W3C Validator, ensuring it meets industry standards for HTML and CSS.</p><br><hr><br>
+                
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="#">Validation_ST4</a></li>
+                </ul><br><hr><br>
+            <p>By combining a clean design, responsive profile, and accessibility features, the User Profile Page effectively introduces the role of the fourth student and helps to understand their contribution to quality education. It reflects the overall contribution to developing a more inclusive and engaging learning environment, supporting the goals of educational advancement.</p>            
             </section>
+        
+
+<!-- for Sitemap section only -->
+
             <section id="sitemap-page" class="editor-section">
                 <h3>SiteMap</h3><br>
                 <p>The HTML code for the Sitemap page is structured to provide a visual representation of the website's navigation hierarchy using SVG graphics. The page is organized into header, main content with the interactive sitemap, and footer sections.</p><br>
@@ -203,10 +294,13 @@
                     <h4>Links</h4>
                     <ul>
                         <li><a href="sitemap.html">Sitemap</a></li>
-                        <li><a href="validation_ST4.html">Validation_ST4</a></li>
+                        <li><a href="#">Validation_ST4</a></li>
                     </ul><hr><br>
                     <p>By combining SVG graphics with interactive elements, the Sitemap Page effectively visualizes the website structure and enhances navigation. It clearly illustrates the relationships between different pages and provides an intuitive way for users to understand the site organization and move between sections.</p>
             </section>
+
+
+            <!-- For the content web -->
 
             <section id="content-page" class="editor-section">
                 <h3>Content Web Page</h3><br>
@@ -249,42 +343,45 @@
                      Overall, the footer is designed to enhance user-friendliness and interactivity by offering quick access to additional pages, contact details, and team information. 
                 </p><br><hr><br>
              </section>
-        </div>
-    </main>
-  
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="editor-block">
-                <p class="head">Editor Profile</p>
-                <p>This is Editor Page of Student 1</p>
-                <p>Click the link below to go to the validation page of student 1.</p>
-                <a href="validation_ST1.html">Editor's Page</a>
-            </div>
+       
 
-            <div class="footer-nav">
-                <p class="head">Navigation</p>
-                <ul>
-                    <li><a href="splash.html">Splash Page</a></li>
-                    <li><a href="home.html">Home Page</a></li>
-                    <li><a href="volunteer.html">Volunteer Page</a></li>
-                    <li><a href="table.html">Table Page</a></li>
-                    <li><a href="profile.html">User Profile Page</a></li>
-                    <li><a href="feedback.html">Feedback Page</a></li>
-                    <li><a href="sitemap.html">Sitemap Page</a></li>
-                    <li><a href="team.html">Team Page</a></li>
-                </ul>
-            </div>
-            <div class="team">
-                <p class="head">Team Members</p>
-                <ul>
-                    <li><a href="pageEditor_ST1.html">Ankit Paudel</a></li>
-                    <li><a href="pageEditor_ST2.html">Aryan Shrestha</a></li>
-                    <li><a href="pageEditor_ST3.html">Bijay Bikram Dahal</a></li>
-                    <li><a href="pageEditor_ST4.html">Kaushal Khatri</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>   
+
+<!-- Go to Top Button -->
+<a href="#" id="go-to-top">↑ Go to Top</a>    
+<!-- Footer -->
+<footer>
+<div class="footer-container">
+    <div class="editor-block">
+        <p class="head">Editor Profile</p>
+        <p>This home page was designed by student 4.</p>
+        <p>For further information, click the link below to go to the editor's page of student 4</p>
+        <a href="pageEditor_ST4.html">Editor's Page</a>
+    </div>
+
+    <div class="footer-nav">
+        <p class="head">Navigation</p>
+        <ul>
+            <li><a href="splash.html">Splash Page</a></li>
+            <li><a href="home.html">Home Page</a></li>
+            <li><a href="volunteer.html">Volunteer Page</a></li>
+            <li><a href="table.html">Table Page</a></li>
+            <li><a href="profile.html">User Profile Page</a></li>
+            <li><a href="feedback.html">Feedback Page</a></li>
+            <li><a href="sitemap.html">Sitemap Page</a></li>
+            <li><a href="team.html">Team Page</a></li>
+        </ul>
+    </div>
+    <div class="team">
+        <p class="head">Team Members</p>
+        <ul>
+            <li><a href="pageEditor_ST1.html">Ankit Paudel</a></li>
+            <li><a href="pageEditor_ST2.html">Aryan Shrestha</a></li>
+            <li><a href="pageEditor_ST3.html">Bijay Bikram Dahal</a></li>
+            <li><a href="pageEditor_ST4.html">Kaushal Khatri</a></li>
+        </ul>
+    </div>
+</div>
+</footer>  
+
 </body>
 </html>

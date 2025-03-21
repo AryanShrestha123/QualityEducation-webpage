@@ -20,13 +20,16 @@ main{
     margin-bottom: 50px;
 }
 .member {
-    padding: 15px;
     width: 300px;
+    height:500px;
+    /* border: black solid 2px;
+    background-color: rgba(0, 0, 0, 0.26); */
 }
 
 .member img {
     width: 100%;
-    border-radius: 8px;
+    height: 60%;
+    border-radius: 50%;
 }
 
 .member h3{
@@ -91,15 +94,3 @@ main{
     font-size: 18px;
     color: #555;
 }
-/* .join-section button{
-    padding:5px 10px;
-    margin-top: 5px;
-    color: white;
-    background-color: #c42d2d;
-    border-radius: 7px;
-    border: #c42d2d solid 2px;
-}
-.join-section button:hover{
-    color: #c42d2d;
-    background-color: transparent;
-} */

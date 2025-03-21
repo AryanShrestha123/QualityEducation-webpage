@@ -31,22 +31,4 @@ tbody .even{
     background-color: #f2f2f2;
 }
 
-/* Responsive Design */
-/* @media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
 
-    .nav-links {
-        margin-top: 10px;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-} */

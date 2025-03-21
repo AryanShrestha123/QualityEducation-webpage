@@ -24,6 +24,7 @@ h2, h3 {
     height: 200px;
     border-radius: 50%;
     margin-bottom: 15px;
+    border: black solid 2px;
 }
 
 .info-list {
