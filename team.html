@@ -1,128 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team - Quality Education</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="team.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar & Footer</title>
+    <link rel="icon" type="image/png" href="image/logoicon.png">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/team.css" />
+  </head>
+  <body>
     <!-- Navbar -->
-    <header class="navbar">
-        <div class="logo"><a href="home.html">Quality Education</a></div>
-        <nav>
-            <ul>
-                <li><a href="splash.html">Splash</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="table.html">Table</a></li>
-                <li><a href="profile.html">User Profile</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="team.html" class="active">Team</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <b href="index.html" class="active">
+            <img src="image/logoicon.png" alt="QE Logo" class="icon">
+            <h2>Quality Education</h2>
+        </b> 
+              <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Splash</a>
+        <a href="home.html">Home</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="table.html">Table</a>
+        <a href="profile.html">User Profile</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="team.html" class="active">Team</a>
+      </div>
+    </nav>
 
+    <!-- Main Content -->
     <main>
-    <div class="title">
-        <p style="font-weight:bold ;font-size:70px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-        Meet Our Team
+      <section class="team-intro">
+        <h2>Meet Our Team</h2>
+        <p>
+          Breaking barriers, fostering inclusivity, and building a brighter
+          future through education.
         </p>
-        <p style="color: rgb(113, 113, 113); margin-bottom: 20px;">
-            Together, we strive to break down barriers, foster inclusivity, and build <br> a brighter future through education.
-        </p>
-    </div>
+      </section>
 
-    
-    <div class="team-container">
+      <section class="team-container">
         <div class="member" id="ankit">
-            <img src="images/ankit_paudel.jpg" alt="Ankit Paudel">
-            <h3>Ankit Paudel</h3>
-            <a href="#ankit" class="detail-button">Details</a>
-            <div class="details">
-                <h4>Student 1</h4>
-                <p><b>Implemented Pages</b></p>
-                <ul>
-                    <li><a href="splash.html">Splash Page</a></li>
-                    <li><a href="volunteer.html">Volunteer Page</a></li>
-                    <li><a href="content_ST1.html">Content 1 Page</a></li>
-                    <li><a href="pageEditor_ST1.html">Editors Page</a></li>
-                </ul>
-            </div>
+          <img src="image/member1.webp" alt="Ankit Paudel" />
+          <h3>Ankit Paudel</h3>
+          <button
+            class="detail-button"
+            onclick="toggleDetails('ankit-details')"
+          >
+            Details
+          </button>
+          <div class="details" id="ankit-details">
+            <h4>Student 1</h4>
+            <h4>Ankit Paudel</h4>
+            <p class="imp-page">Implemented Pages:</p>
+            <ul>
+              <li><a href="index.html">Splash Page</a></li>
+              <li><a href="volunteer.html">Volunteer Page</a></li>
+              <li><a href="content_ST1.html">Content 1 Page</a></li>
+              <li><a href="pageEditor_ST1.html">Editors Page</a></li>
+            </ul>
+          </div>
         </div>
         <div class="member" id="aryan">
-            <img src="images/aryan_shrestha.jpg" alt="Aryan Shrestha">
-            <h3>Aryan Shrestha</h3>
-            <a href="#aryan" class="detail-button">Details</a>
-            <div class="details">
-                <h4>Student 2</h4>
-                <p><b>Implemented Pages</b></p>
-                <ul>
-                    <li><a href="home.html">Home Page</a></li>
-                    <li><a href="table.html">Table Page</a></li>
-                    <li><a href="content_ST2.html">Content 2 Page</a></li>
-                    <li><a href="pageEditor_ST2.html">Editors Page</a></li>
-                </ul>
-            </div>
+          <img src="image/member1.webp" alt="Aryan Shrestha" />
+          <h3>Aryan Shrestha</h3>
+          <button
+            class="detail-button"
+            onclick="toggleDetails('aryan-details')"
+          >
+            Details
+          </button>
+          <div class="details" id="aryan-details">
+            <h4>Student 2</h4>
+            <h4>Aryan Shrestha</h4>
+            <p class="imp-page">Implemented Pages:</p>
+            <ul>
+              <li><a href="home.html">Home Page</a></li>
+              <li><a href="table.html">Table Page</a></li>
+              <li><a href="content_ST2.html">Content 2 Page</a></li>
+              <li><a href="pageEditor_ST2.html">Editors Page</a></li>
+            </ul>
+          </div>
         </div>
         <div class="member" id="bijay">
-            <img src="images/bijay_dahal.jpg" alt="Bijay Bikram Dahal">
-            <h3>Bijay Bikram Dahal</h3>
-            <a href="#bijay" class="detail-button">Details</a>
-            <div class="details">
-                <h4>Student 3</h4>
-                <p><b>Implemented Pages</b></p>
-                <ul>
-                    <li><a href="feedback.html">Feedback Page</a></li>
-                    <li><a href="team.html">Team Page</a></li>
-                    <li><a href="content_ST3.html">Content 3 Page</a></li>
-                    <li><a href="pageEditor_ST3.html">Editors Page</a></li>
-                </ul>
-            </div>
+          <img src="image/bijay.jpg" alt="Bijay Bikram Dahal" />
+          <h3>Bijay Bikram Dahal</h3>
+          <button
+            class="detail-button"
+            onclick="toggleDetails('bijay-details')"
+          >
+            Details
+          </button>
+          <div class="details" id="bijay-details">
+            <h4>Student 3</h4>
+            <h4>Bijay Bikram Dahal</h4>
+            <p class="imp-page">Implemented Pages:</p>
+            <ul>
+              <li><a href="feedback.html">Feedback Page</a></li>
+              <li><a href="team.html">Team Page</a></li>
+              <li><a href="content_ST3.html">Content 3 Page</a></li>
+              <li><a href="pageEditor_ST3.html">Editors Page</a></li>
+            </ul>
+          </div>
         </div>
         <div class="member" id="kaushal">
-            <img src="images/kaushal_khatri.jpg" alt="Kaushal Khatri">
-            <h3>Kaushal Khatri</h3>
-            <a href="#kaushal" class="detail-button">Details</a>
-            <div class="details">
-                <h4>Student 4</h4>
-                <p><b>Implemented Pages</b></p>
-                <ul>
-                    <li><a href="profile.html">User Profile Page</a></li>
-                    <li><a href="sitemap.html">Sitemap Page</a></li>
-                    <li><a href="content_ST4.html">Content 4 Page</a></li>
-                    <li><a href="pageEditor_ST4.html">Editors Page</a></li>
-                </ul>
-            </div>
+          <img src="image/member1.webp" alt="Kaushal Khatri" />
+          <h3>Kaushal Khatri</h3>
+          <button
+            class="detail-button"
+            onclick="toggleDetails('kaushal-details')"
+          >
+            Details
+          </button>
+          <div class="details" id="kaushal-details">
+            <h4>Student 4</h4>
+            <h4>Kaushal Khatri</h4>
+            <p class="imp-page">Implemented Pages:</p>
+            <ul>
+              <li><a href="profile.html">User Profile Page</a></li>
+              <li><a href="sitemap.html">Sitemap Page</a></li>
+              <li><a href="content_ST4.html">Content 4 Page</a></li>
+              <li><a href="pageEditor_ST4.html">Editors Page</a></li>
+            </ul>
+          </div>
         </div>
-    </div>
-    
-    <hr style="margin-bottom: 30px; margin-left:10px; margin-right:10px;">
+      </section>
 
-    <div class="join-section">
-        <h1>Join Our Team</h1>
-        <p>We are always looking for passionate and talented individuals to join us. 
-            <br>Be a part of something amazing!</p>
-        <!-- <button>Contact us</button> -->
-    </div>
-
+      <section class="join-section">
+        <h2>Join Our Team</h2>
+        <p>
+          We are always looking for passionate and talented individuals to join
+          us.<br />Be a part of something amazing!
+        </p>
+      </section>
     </main>
-    
+
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="editor-block">
                 <p class="head">Editor Profile</p>
                 <p>This team page was designed by student 3.</p>
                 <p>For further information, click the link below to go to the editor's page of student 3</p>
-                <a href="pageEditor_ST3.html">Editor's Page</a>
+                <a class="editor-block-link" href="pageEditor_ST3.html">Editor's Page</a>
             </div>
 
             <div class="footer-nav">
                 <p class="head">Navigation</p>
                 <ul>
-                    <li><a href="splash.html">Splash Page</a></li>
+                    <li><a href="index.html">Splash Page</a></li>
                     <li><a href="home.html">Home Page</a></li>
                     <li><a href="volunteer.html">Volunteer Page</a></li>
                     <li><a href="table.html">Table Page</a></li>
@@ -142,6 +168,25 @@
                 </ul>
             </div>
         </div>
+      <p style="color: tan;">
+         Quality Education.&copy; <span id="year"></span> All rights reserved.
+      </p>
     </footer>
-</body>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+      function toggleDetails(id) {
+        document.getElementById(id).classList.toggle("active");
+      }
+      // Get the current year
+      const currentYear = new Date().getFullYear();
+
+      // Set the year in the span element with id 'year'
+      document.getElementById("year").textContent = currentYear;
+      
+    </script>
+  </body>
 </html>

@@ -3,261 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quality Education:Quality education euqality</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-
-        /* Page Layout */
-        main{
-            display: flex;
-        }
-
-        .editor-nav {
-            position: fixed;
-            left: 10px;
-            top: 80px;
-            width: 10%; /* Adjust width as needed */
-            height: 50%;
-            background-color: #d8b4b4; /* Light pinkish background */
-            padding: 10px;
-        }
-
-        .editor-nav h2 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: black;
-        }
-
-        .editor-nav .links {
-            display: flex;
-            flex-direction: column; /* Stack links vertically */
-        }
-
-        .editor-nav .links a {
-            display: block;
-            margin-bottom: 10px;
-            padding: 8px;
-            text-decoration: none;
-            color: purple;
-            font-weight: bold;
-        }
-
-        .editor-nav .links a:hover {
-            text-decoration: underline;
-            background-color: rgba(196, 45, 45, 0.7); /* Light red background on hover */
-            color: white;
-            border-radius: 5px;
-        }
-
-
-        .page-container{
-            background-color: rgb(245, 245, 245);
-            max-width: 80%;
-            margin:20px;
-            margin-left: 15%;
-
-        }
-
-        .editor-title h2{
-            padding: 20px 0px;
-            margin-bottom:20px;
-            background-color: #c42d2db6;
-            text-align: center;
-        }
-
-        .editor-section {
-            margin-bottom: 40px;
-            border-radius: 15px;
-            background-color: rgba(0, 0, 0, 0.1);
-            padding:20px;
-        }
-
-        h3{
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        h4{
-            font-size: 16px;
-        }
-
-        .editor-section ul {
-            text-align: left;
-            padding-left: 40px; 
-        }
-        .editor-section h3{
-            text-align: center  ;
-        }
-    </style>
+    <title>Editor Page</title>
+    <link rel="icon" type="image/png" href="image/logoicon.png">
+    <link rel="stylesheet" href="css/editor_page.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Navigation Menu -->
-    <header class="navbar">
-        <div class="logo">Quality Education</div>
-        <nav>
-            <ul>
-                <li><a href="splash.html">Splash</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="table.html">Table</a></li>
-                <li><a href="profile.html">User Profile</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="team.html">Team</a></li>
-            </ul>
-        </nav>
-    </header>
     
-    <main class="main-content">
-        <div class="editor-nav">
-            <section class="links">
-                <h2>Navigation</h2>
-                <a href="#splash-page">Splash Page</a>
-                <a href="#volunteer-page">Volunteer Page</a>
-            </section>
-            
-
-        </div>
-        <!-- Main Content Area -->
-        <div class="page-container">
-            <section class="editor-title">
-                <h2>Ankit Paudel (Editor's Page)</h2>
-            </section>
-            <section id="splash-page" class="editor-section">
-                <h3>Splash Page</h3>
-                
-                <!-- <h2>Top 10 Ways to Reduce Your Carbon Footprint</h2> -->
-                <p>The splash screen is a visually engaging introduction to the website, featuring a library background, a mission statement, and a progress bar. It highlights the project’s goal of promoting quality education.</p>
-                <hr>
-                <br>
-                <h4>HTML Techniques</h4>
-                The Splash Page is structured using key HTML5 elements for a visually engaging introduction. The <code>&lt;div class="splash-screen"&gt;</code> tag wraps the content, which includes the main heading, mission statement, and list of group members. The <code>&lt;h1&gt;</code> tag is used to display the primary heading, while <code>&lt;p&gt;</code> tags provide the mission statement and additional information. The <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> tags are used to list the group members. A loading bar is created using <code>&lt;div class="loading-bar"&gt;</code> and <code>&lt;div class="progress"&gt;</code>, and the <code>&lt;script&gt;</code> tag handles the automatic redirection to the home page after a few seconds.</p><br>
-                <p><b>Key HTML elements include:</b></p>
-                <ul>
-                    <li><b>&lt;div class="splash-screen"&gt;:</b> Wraps the splash content, providing a structured layout.</li>
-                    <li><b>&lt;h1&gt;:</b> Displays the main heading, setting the theme of the page.</li>
-                    <li><b>&lt;p&gt;:</b> Used for the mission statement and group member section, ensuring clarity.</li>
-                    <li><b>&lt;ul&gt; &amp; &lt;li&gt;:</b> Lists group members in an organized manner.</li>
-                    <li><b>&lt;div class="loading-bar"&gt; &amp; &lt;div class="progress"&gt;:</b> Creates a visual loading bar that animates before redirecting.</li>
-                    <li><b>&lt;script&gt;:</b> Controls the automatic redirection to the home page after 4 seconds.</li>
-                </ul><br>
-                <hr>
-                <br>
-
-                <p><b>CSS Techniques</b></p>
-                <p>The Splash Page is styled using modern CSS techniques to create an attractive and responsive layout. The page utilizes a full-screen background image to capture the user’s attention, and the content is centered with padding and margins to ensure clarity and focus.</p>
-
-                <p>Key CSS properties include:</p>
-                <ul>
-                    <li><b>Background Image:</b> The <code>background</code> property sets a full-screen background image, making the page visually appealing and immersive.</li>
-                    <li><b>Flexbox:</b> The <code>text-align: center</code> property centers the text and content, creating a balanced and visually pleasant layout.</li>
-                    <li><b>RGBA Color:</b> The <code>background-color</code> property uses an RGBA value to create a semi-transparent overlay that enhances readability against the background image.</li>
-                    <li><b>Font Size and Spacing:</b> <code>font-size</code> and <code>padding</code> are applied to ensure that text is readable and well-spaced, with distinct sections for the heading, mission statement, and list.</li>
-                    <li><b>Loading Bar:</b> The <code>.loading-bar</code> and <code>.progress</code> classes are used to create a visually appealing loading bar with smooth animation using the <code>transition</code> property.</li>
-                    <li><b>Border Radius:</b> Applied to elements like the loading bar and progress indicator to create rounded corners, giving the page a modern look.</li>
-                </ul>
-                <br><hr><br>
-
-                <h4>Challenges and Lessons Learned</h4>
-                <p>During the development of the splash Page, one challenge was ensuring the layout remained consistent across different screen sizes. This was resolved by thoroughly testing the page on multiple devices and adjusting the media queries as needed. Another challenge was balancing visual appeal with performance, which was addressed by optimizing image sizes and minimizing CSS code. These experiences highlighted the importance of responsive design and performance optimization in web development.</p><br><hr><br>
-
-
-                <h4>Compliance</h4>
-                <p>The Splash Page complies with web standards and accessibility guidelines. It uses semantic HTML5 elements to ensure a clear structure, with descriptive alt text for any images (such as the background). The page has been validated using the W3C Validator, ensuring it meets industry standards for HTML and CSS. Additionally, the design focuses on accessibility, with good contrast for readability and an intuitive layout for a positive user experience.
-                </p><br><hr><br>
-
-                <h4>Links</h4>
-                <ul>
-                    <li><a href="splash.html">splash Page</a></li>
-                    <li><a href="validation_ST1.html">Validation Report for splash page</a></li>
-                </ul><br><hr><br>
-            </section>
-
-            <section id="volunteer-page" class="editor-section">
-                <h3>Volunteer Page</h3>
-                <p><p>The Volunteer Page is a dedicated section of the website aimed at promoting and highlighting various volunteer opportunities. This page features a collection of ongoing and upcoming projects related to quality education and empowerment. Users can explore details about different programs, view the project's description, and get involved by clicking on the "VIEW PROJECT" button. The page also includes ratings, reviews from participants, and a feedback section, encouraging community engagement and interaction. The purpose is to inspire visitors to take part in meaningful volunteer work and contribute towards the mission of providing quality education.
-                </p><br><hr><br>
-
-                <h4>HTML Techniques</h4>
-                <p>The Volunteer Page uses semantic HTML5 tags to ensure structure, clarity, and accessibility. The <code>&lt;header&gt;</code> tag contains the navigation menu, linking to important sections such as Home, Volunteer, and Profile Pages. The main content is divided into meaningful sections using <code>&lt;section&gt;</code> tags, each highlighting key volunteer opportunities. <code>&lt;article&gt;</code> tags are employed for individual program cards, which present project details. The <code>&lt;footer&gt;</code> section includes links to the editor's page, team members, and other navigational elements.</p>
-                <p><b>Key HTML elements include:</b></p>
-                <ul>
-                    <li><code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> tags for headings, creating a well-defined content hierarchy.</li>
-                    <li><code>&lt;p&gt;</code> tags for descriptive text, ensuring the content is engaging and informative.</li>
-                    <li><code>&lt;section&gt;</code> tags to group relevant content such as volunteer programs and ratings.</li>
-                    <li><code>&lt;article&gt;</code> tags for individual program cards that display detailed project information.</li>
-                    <li><code>&lt;a&gt;</code> tags for navigation, making it easy for users to explore different volunteer projects.</li>
-                    <li><code>&lt;footer&gt;</code> for quick links, team information, and credits.</li>
-                </ul>
-
-                <p><b>CSS Techniques</b></p>
-
-                <p>The Volunteer Page is styled using modern CSS techniques to create an engaging and responsive design. Flexbox is used to center elements like the navigation menu and footer, while Grid is employed to organize volunteer program cards and ratings sections. The page follows a consistent color scheme, typography, and spacing that enhances readability and aligns with the overall theme of the website.</p>
-
-                <p><b>Key CSS properties include:</b></p>
-                <ul>
-                    <li><b>Flexbox:</b> Centers the navigation menu and footer content, ensuring a clean and responsive layout across devices.</li>
-                    <li><b>Grid:</b> Organizes the volunteer program cards into a visually appealing layout, adapting to different screen sizes.</li>
-                    <li><b>Media Queries:</b> Ensures the page is fully responsive, adjusting the layout for desktops, tablets, and mobile devices.</li>
-                    <li><b>Transitions and Hover Effects:</b> Adds subtle hover effects to buttons and program cards, improving user interaction.</li>
-                    <li><b>Box Shadow and Border Radius:</b> Gives depth to program cards and buttons, creating a modern look and feel.</li>
-                    <li><b>Typography:</b> Utilizes clear and legible fonts, enhancing readability and aligning with the theme of education and volunteerism.</li>
-                </ul><br><hr><br>
-
-                <p><b>Purpose of Key Tags and Styling</b></p>
-                <ul>
-                    <li><b>section:</b> Used to organize different parts of the volunteer page, such as the program details, ratings, and feedback sections, creating a clear structure.</li>
-                    <li><b>Flexbox and Grid:</b> Ensure a visually appealing layout for the volunteer program cards and ratings, while maintaining responsiveness across different screen sizes.</li>
-                    <li><b>Media Queries:</b> Guarantee the page is fully responsive, adjusting the layout for desktops, tablets, and mobile devices, ensuring an optimal experience for all users.</li>
-                    <li><b>Semantic HTML Tags:</b> Enhance accessibility and SEO by providing meaningful structure, making it easier for users and search engines to navigate and understand the page content.</li>
-                    <li><b>button:</b> Used for interactive elements like "VIEW PROJECT" and "Submit Feedback" to engage users in the volunteer process and ensure smooth navigation.</li>
-                </ul></p><br>
-
-                <br><hr><br>
-
-                <h4>Accessibility Features</h4>
-                <p>The Volunteer Page is designed with accessibility in mind, ensuring an inclusive experience for all users.</p>
-                <ul>
-                    <li>Descriptive alt text for all images, ensuring screen readers can convey the content to visually impaired users.</li>
-                    <li>High contrast ratios between text and background colors to enhance readability for users with visual impairments.</li>
-                    <li>ARIA labels for interactive elements, such as buttons and links, to improve navigation for users relying on assistive technologies.</li>
-                    <li>Keyboard navigability, enabling users to interact with the page without requiring a mouse.</li>
-                </ul>
-                <br><hr><br>
-
-                <h4>Challenges and Lessons Learned</h4>
-                <p>One challenge during the development of the Volunteer Page was ensuring that the volunteer program cards were visually appealing and well-structured across different screen sizes. This was resolved by using Flexbox and Grid to align the elements and media queries to optimize the layout for smaller screens.</p>
-                <br><hr><br>
-
-                <h4>Compliance</h4>
-                <p>The Volunteer Page complies with Janet regulations and web standards by using semantic HTML5 tags, ensuring clarity and accessibility. It includes descriptive alt text for images, making the content more inclusive for users with disabilities. The page adheres to accessibility guidelines and follows best practices for responsive design. Additionally, it has been validated using the W3C Validator, ensuring that it meets industry standards for HTML and CSS for a well-structured and user-friendly experience.</p>
-                <br><hr><br>
-
-                <h4>Links</h4>
-                <ul>
-                    <li><a href="volunteer.html" target="_blank">View volunteer Page</a></li>
-                    <li><a href="validation_ST1.html" target="_blank">Validation Report for Table Page</a></li>
-                </ul>
-                <br><hr><br>
-            </section>
-
-        </div>
+        <!-- Navbar -->
+    <nav class="navbar">
+        <b href="index.html" class="active">
+            <img src="image/logoicon.png" alt="QE Logo" class="icon">
+            <h2>Quality Education
+            </h2>
+        </b> 
+              <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Splash</a>
+        <a href="home.html">Home</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="table.html">Table</a>
+        <a href="profile.html">User Profile</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="team.html" class="active">Team</a>
+      </div>
+    </nav>
+    <main>
+        <section id="volunteer">
+            <h2>Ankit Paudel</h2>
+            <p>
+                Our mission is to ensure clean and accessible water for all. We focus on improving water quality, reducing pollution, and providing sustainable solutions for water management.
+            </p>
+            <img src="https://i.chzbgr.com/full/9025163776/hB4A56B60/me-meme-about-looking-like-a-cross-dressing-rob-schneider" alt="Bijay Bikram Dahal" class="center-image">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec libero et velit suscipit fermentum vel ac nulla. Fusce varius risus at orci aliquet, sed venenatis justo condimentum. Integer facilisis elit nec lorem pharetra, ut dignissim lacus bibendum.
+            </p>
+            <p>
+                Curabitur sagittis metus in felis aliquet malesuada. Praesent elementum, sapien eget ultricies bibendum, sapien erat fermentum odio, a tincidunt arcu libero nec justo. Nulla facilisi.
+            </p>
+            <p>
+                We believe in collaboration, innovation, and sustainable practices to tackle the challenges of water scarcity and sanitation. Join us in making a difference.
+            </p>
+        </section>
     </main>
-  
+    
     <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="editor-block">
                 <p class="head">Editor Profile</p>
-                <p>This is Editor Page of Student 1</p>
-                <p>Click the link below to go to the validation page of student 1.</p>
-                <a href="validation_ST1.html">Editor's Page</a>
+                <p>This team page was designed by student 3.</p>
+                <p>For further information, click the link below to go to the editor's page of student 3</p>
+                <a class="editor-block-link" href="pageEditor_ST3.html">Editor's Page</a>
             </div>
 
             <div class="footer-nav">
                 <p class="head">Navigation</p>
                 <ul>
-                    <li><a href="splash.html">Splash Page</a></li>
+                    <li><a href="index.html">Splash Page</a></li>
                     <li><a href="home.html">Home Page</a></li>
                     <li><a href="volunteer.html">Volunteer Page</a></li>
                     <li><a href="table.html">Table Page</a></li>
@@ -277,6 +81,25 @@
                 </ul>
             </div>
         </div>
-    </footer>   
+      <p style="color: tan;">
+         Quality Education.&copy; <span id="year"></span> All rights reserved.
+      </p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+      function toggleDetails(id) {
+        document.getElementById(id).classList.toggle("active");
+      }
+      // Get the current year
+      const currentYear = new Date().getFullYear();
+
+      // Set the year in the span element with id 'year'
+      document.getElementById("year").textContent = currentYear;
+      
+    </script>
 </body>
 </html>

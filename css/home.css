@@ -1,0 +1,446 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Inter', sans-serif; */
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+}
+
+.main-text {
+    position: relative;
+    background-image: url(../image/ai2.webp);
+    /* color: #ffffff; */
+    padding: 150px 20px;
+    text-align: center;
+}
+
+/* Add an overlay */
+.main-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 2;
+}
+
+/* Ensure text appears above the overlay */
+.main-text h1 {
+    position: relative;
+    font-size: 36px;
+    font-weight: bold;
+    color: aliceblue;
+    z-index: 2;
+}
+
+
+.main-text p {
+    margin: 10px 300px;
+   position: relative;
+   background: rgba(0, 0, 0, 0.1); /* Semi-transparent black */
+   display: inline-block;
+   border-radius: 5px;
+   color: aliceblue;
+   z-index: 2;
+   font-size: 18px;
+   font-weight: 800;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+/* Courses Section */
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: -60px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.content-card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.content-card:hover {
+    transform: translateY(-7px);
+    transition: transform 0.3s;
+}
+
+.content-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.overlay h3 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.overlay p {
+    font-size: 12px;
+    margin: 0px 5px;
+}
+
+/* Learn More Button */
+.button-container {
+    margin-bottom: 40px;
+}
+
+.learn-more {
+    padding: 12px 25px;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.learn-more:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Commitment */
+.commitment {
+    background-color: rgb(174, 174, 174);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.commitment h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* What we do */
+.what-we-do {
+    padding: 40px;
+    text-align: center;
+}
+
+.what-we-do-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.activity {
+    width: 25%;
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.activity h3 {
+    color: #333;
+}
+
+.activity p {
+    color: #666;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1200px) {
+    .content {
+        gap: 40px;
+    }
+
+    .content-card {
+        width: 220px;
+        height: 220px;
+    }
+
+    .what-we-do-container {
+        justify-content: center;
+    }
+
+    .activity {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-text {
+        padding: 100px 20px;
+    }
+
+    .main-text h1 {
+        font-size: 28px;
+    }
+
+    .main-text p {
+        margin: 10px 50px;
+        font-size: 14px;
+    }
+
+    .content {
+        gap: 30px;
+    }
+
+    .content-card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .overlay h3 {
+        font-size: 16px;
+    }
+
+    .overlay p {
+        font-size: 10px;
+    }
+
+    .what-we-do-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activity {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .learn-more {
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main-text {
+        padding: 80px 20px;
+    }
+
+    .main-text h1 {
+        font-size: 24px;
+    }
+
+    .main-text p {
+        margin: 10px 20px;
+        font-size: 12px;
+    }
+
+    .content {
+        gap: 20px;
+    }
+
+    .content-card {
+        width: 180px;
+        height: 180px;
+    }
+
+    .overlay h3 {
+        font-size: 14px;
+    }
+
+    .overlay p {
+        font-size: 8px;
+    }
+
+    .what-we-do-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activity {
+        width: 90%;
+    }
+
+    .learn-more {
+        padding: 8px 18px;
+    }
+}
+
+
+
+
+/* Make sure the navbar menu are on top of other content */
+nav {
+    position: relative;
+    z-index: 9999; /* Ensures it's on top */
+}
+
+
+
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002b5c;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+.navbar a.active,
+.navbar a.active:focus,
+.navbar a.active:visited {
+    color: #f8c704;
+    font-weight: bold;
+}
+
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #002b5c;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #002b5c;
+    color: white;
+    margin-top: auto;
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px 0;
+    background-color: #002b5c;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.footer-container .editor-block,
+.footer-container .footer-nav,
+.footer-container .team {
+    width: 100%;
+    max-width: 300px; /* Control the width */
+    margin: 0 auto;
+}
+
+.footer-container .footer-nav ul,
+.footer-container .team ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container .footer-nav li,
+.footer-container .team li {
+    margin: 10px 0;
+}
+
+.footer-container .footer-nav a,
+.footer-container .team a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container .footer-nav .head,
+.footer-container .team .head,
+.footer-container .editor-block .head {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Ensure footer looks good on small screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container .editor-block,
+    .footer-container .footer-nav,
+    .footer-container .team {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 20px;
+    }
+
+    .footer-container .footer-nav ul,
+    .footer-container .team ul {
+        text-align: center;
+    }
+}

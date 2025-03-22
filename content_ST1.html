@@ -4,55 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ripple Effect of Quality Education</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        h1 {
-            padding: 20px;
-            font-size: 40px;
-            text-align: center;
-        }
-        .content {
-            margin: 20px;
-            padding: 20px;
-        }
-        .content h2 {
-            font-size: 30px;
-            color: rgb(51, 51, 51);
-        }
-        .content p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: rgb(85, 85, 85);
-            margin-bottom: 10px;
-        }
-        .image-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .image-container img {
-            width: 50%;
-            margin: 10px 0;
-            border-radius: 8px;
-        }
-    </style>
+    <link rel="icon" type="image/png" href="image/logoicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/st_content.css">
+    
 </head>
 <body>
     <!-- Navbar -->
-    <header class="navbar">
-        <div class="logo"><a href="home.html">Quality Education</a></div>
-        <nav>
-            <ul>
-                <li><a href="splash.html">Splash</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="table.html">Table</a></li>
-                <li><a href="profile.html">User Profile</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="team.html">Team</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <b href="index.html" class="active">
+            <img src="image/logoicon.png" alt="QE Logo" class="icon">
+            <h2>Quality Education</h2>
+        </b> 
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="nav-links">
+          <a href="index.html">Splash</a>
+          <a href="home.html">Home</a>
+          <a href="content_ST1.html"class="active">Ankit Paudel</a>
+          <a href="content_ST2.html">Aryan Shrestha</a>
+          <a href="content_ST3.html">Bijay Bikram Dahal</a>
+          <a href="content_ST4.html">Kaushal Khatri</a>
+          <a href="team.html" >Team</a>
+        </div>
+      </nav>
 
     <main>
         <div class="content">
@@ -62,7 +36,7 @@
             <p>Education isn't just about memorizing facts or acing standardized tests. It's about giving people the tools to rewrite their futures. Think about it—when a person gets a real shot at learning, it doesn't just transform their life. It ripples outward, impacting families, communities, and even entire economies. Education is the great equalizer, offering everyone—regardless of background—the opportunity to change the trajectory of their lives.</p>
     
             <div class="image-container">
-                <img src="images/content1_img2.jpeg" alt="Image 1">
+                <img src="image/content1_img2.jpeg" alt="Image 1">
             </div>
     
             <h2>Barriers to Education</h2>
@@ -75,7 +49,7 @@
             <p>But there's more to it than just better classrooms or newer textbooks. True quality education ensures that every child, regardless of where they live or what their background is, has an equal chance to succeed. Imagine a girl in rural Kenya, working hard with a tablet, learning coding skills that will open doors to an entirely new world of opportunities. Now imagine a teenager in Tokyo, also mastering the latest technologies. In an ideal world, both of them should have the same access to these skills—because in the end, the potential of a person isn't limited by where they're from or how much money they have. Their potential is shaped by what they're given the chance to learn.</p>
    
             <div class="image-container">
-                <img src="images/content1_img1.jpeg" alt="Image 2">
+                <img src="image/content1_img1.jpeg" alt="Image 2">
             </div>
 
             <h2>The Path Forward</h2>
@@ -97,13 +71,13 @@
                 <p class="head">Editor Profile</p>
                 <p>This content page was designed by student 1.</p>
                 <p>For further information, click the link below to go to the editor's page of student 1</p>
-                <a href="pageEditor_ST1.html">Editor's Page</a>
+                <a class="editor-block-link" href="pageEditor_ST1.html">Editor's Page</a>
             </div>
 
             <div class="footer-nav">
                 <p class="head">Navigation</p>
                 <ul>
-                    <li><a href="splash.html">Splash Page</a></li>
+                    <li><a href="index.html">Splash Page</a></li>
                     <li><a href="home.html">Home Page</a></li>
                     <li><a href="volunteer.html">Volunteer Page</a></li>
                     <li><a href="table.html">Table Page</a></li>
@@ -123,7 +97,25 @@
                 </ul>
             </div>
         </div>
-    </footer>
+        <p style="color: tan">
+            Quality Education.&copy; <span id="year"></span> All rights reserved.
+          </p>
+      </footer>
+  
+      <!-- JavaScript for Mobile Menu -->
+      <script>
+        function toggleMenu() {
+          document.querySelector(".nav-links").classList.toggle("active");
+        }
+        function toggleDetails(id) {
+          document.getElementById(id).classList.toggle("active");
+        }
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+  
+        // Set the year in the span element with id 'year'
+        document.getElementById("year").textContent = currentYear;
+      </script>
 
 </body>
 </html>

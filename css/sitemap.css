@@ -1,0 +1,211 @@
+/* General Styles */
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+}
+
+.profile-card {
+    text-align: center;
+    background: rgb(160, 149, 149);
+    padding: 30px;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    max-height: 400px;
+    flex: 1 1 300px; /* Makes it responsive */
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+.contact-form {
+    background: white;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+    max-height: 300px;
+    flex: 1 1 300px; /* Makes it responsive */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(189, 195, 199);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.contact-form button {
+    background: #c42d2d;
+    color: white;
+    border: #c42d2d solid 2px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: transparent;
+    color: #c42d2d;
+}
+
+.skills, .bio, .experience, .un-goals {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.experience ul, .un-goals ul {
+    margin-left: 20px;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+.skill-bar {
+    margin-bottom: 10px;
+}
+
+.skill-bar span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.progress {
+    background: #c42d2d;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.bio p, .experience p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.volunteering img, .un-goals img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Additional styles for SVG and Sitemap */
+ h4 {
+    margin-top: 20px;
+}
+
+/* h4, p {
+    margin-left: 20px;
+}  */
+
+rect {
+    rx: 20px;
+    ry: 20px;
+    height: 50px;
+    stroke: black;
+}
+
+.main-pages {
+    fill: #b45252;
+}
+
+.content-pages {
+    fill: rgb(91, 35, 86);
+}
+
+.editor-page {
+    fill: rgb(7, 82, 125);
+}
+
+rect:hover {
+    fill: black;
+}
+
+.sitemap-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .contact-form {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .skills, .bio, .experience, .un-goals {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h4, p {
+        margin-left: 0;
+    }
+
+    .sitemap-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-card {
+        padding: 20px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .info-list li {
+        font-size: 12px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 12px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+    }
+
+    .skill-bar span {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}

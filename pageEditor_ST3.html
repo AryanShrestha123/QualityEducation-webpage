@@ -3,45 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editor's Page 3</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="logo"><a href="home.html">Quality Education</a></div>
-        <nav>
-            <ul>
-                <li><a href="splash.html">Splash</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="table.html">Table</a></li>
-                <li><a href="profile.html">User Profile</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="team.html">Team</a></li>
-            </ul>
-        </nav>
-    </header>
+    <title>Editor Page</title>
+    <link rel="icon" type="image/png" href="image/logoicon.png">
+    <link rel="stylesheet" href="css/editor_page.css">
 
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+
+
+<body>
+    
+        <!-- Navbar -->
+    <nav class="navbar">
+        <b href="index.html" class="active">
+            <img src="image/logoicon.png" alt="QE Logo" class="icon">
+            <h2>Quality Education
+            </h2>
+        </b> 
+              <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Splash</a>
+        <a href="home.html">Home</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="table.html">Table</a>
+        <a href="profile.html">User Profile</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="team.html" class="active">Team</a>
+      </div>
+    </nav>
+    
     <main>
-        
+        <section id="volunteer">
+            <h2>Bijay Bikram Dahal</h2>
+            <p>
+                Our mission is to ensure clean and accessible water for all. We focus on improving water quality, reducing pollution, and providing sustainable solutions for water management.
+            </p>
+            <img src="image/bijay.jpg" alt="Bijay Bikram Dahal" class="center-image">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec libero et velit suscipit fermentum vel ac nulla. Fusce varius risus at orci aliquet, sed venenatis justo condimentum. Integer facilisis elit nec lorem pharetra, ut dignissim lacus bibendum.
+            </p>
+            <p>
+                Curabitur sagittis metus in felis aliquet malesuada. Praesent elementum, sapien eget ultricies bibendum, sapien erat fermentum odio, a tincidunt arcu libero nec justo. Nulla facilisi.
+            </p>
+            <p>
+                We believe in collaboration, innovation, and sustainable practices to tackle the challenges of water scarcity and sanitation. Join us in making a difference.
+            </p>
+        </section>
     </main>
+    
+
+
 
     <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="editor-block">
                 <p class="head">Editor Profile</p>
-                <p>This is the Editor's Page of Student 3.</p>
-                <p>Click the link below to go to the validation page of student 3</p>
-                <a href="validation_ST3.html">Editor's Page</a>
+                <p>This team page was designed by student 3.</p>
+                <p>For further information, click the link below to go to the editor's page of student 3</p>
+                <a class="editor-block-link" href="pageEditor_ST3.html">Editor's Page</a>
             </div>
 
             <div class="footer-nav">
                 <p class="head">Navigation</p>
                 <ul>
-                    <li><a href="splash.html">Splash Page</a></li>
+                    <li><a href="index.html">Splash Page</a></li>
                     <li><a href="home.html">Home Page</a></li>
                     <li><a href="volunteer.html">Volunteer Page</a></li>
                     <li><a href="table.html">Table Page</a></li>
@@ -61,7 +90,25 @@
                 </ul>
             </div>
         </div>
+      <p style="color: tan;">
+         Quality Education.&copy; <span id="year"></span> All rights reserved.
+      </p>
     </footer>
 
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+      function toggleDetails(id) {
+        document.getElementById(id).classList.toggle("active");
+      }
+      // Get the current year
+      const currentYear = new Date().getFullYear();
+
+      // Set the year in the span element with id 'year'
+      document.getElementById("year").textContent = currentYear;
+      
+    </script>
 </body>
 </html>

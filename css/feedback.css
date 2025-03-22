@@ -1,0 +1,136 @@
+/* Centering the main content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+/* Styling for the fieldset */
+fieldset {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(200, 200, 200);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Styling for the legend */
+legend {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+}
+
+/* Feedback form container */
+.feedback-form {
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    width: 70%;
+    background-color: white;
+    max-width: 800px;
+}
+
+
+
+/* Labels */
+label {
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(85, 85, 85);
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input, textarea, and select styles */
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input[id="country"], 
+input[type="file"], 
+textarea, 
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Focus effect */
+input:focus, textarea:focus, select:focus {
+    border-color: rgb(40, 167, 69);
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
+    outline: none;
+}
+
+/* Rating section */
+.rating {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+/* Radio button labels */
+.radio-group label {
+    margin-bottom: 2px;
+    margin-right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* Submit button */
+.submit-btn {
+    margin-top: 15px;
+    background: rgb(40, 167, 69);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.submit-btn:hover {
+    background: transparent;
+    color: rgb(40, 167, 69);
+    border: 2px solid rgb(40, 167, 69);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feedback-form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    input[type="tel"], 
+    input[id="country"], 
+    input[type="file"], 
+    textarea, 
+    select {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+    }
+}

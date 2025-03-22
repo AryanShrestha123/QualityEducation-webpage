@@ -1,0 +1,253 @@
+
+.team-intro, .join-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.member {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.detail-button {
+    background: #002b5c;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.details {
+    text-align: center;
+    display: none;
+    margin-top: 10px;
+}
+
+.details.active {
+    display: block;
+}
+.details ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+  }
+  
+  .details ul li {
+    margin-top: 10px; /* Adds spacing between items */
+  }
+  
+  
+  .details a {
+    color: black !important; /* Keeps the text black */
+    text-decoration: none; /* Removes underline */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .details a:visited,
+  .details a:hover,
+  .details a:active {
+    color: black !important; /* Ensures color stays black in all states */
+  }
+
+  .imp-page{
+    font-family:sans-serif;
+    font-weight: 800;
+    margin-top: 5px;
+  }
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Page Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height */
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+main {
+    flex: 1; /* Pushes the footer to bottom */
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002b5c;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+.navbar a.active,
+.navbar a.active:focus,
+.navbar a.active:visited {
+    color: #f8c704;
+    font-weight: bold;
+}
+
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #002b5c;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #002b5c;
+    color: white;
+    margin-top: auto;
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px 0;
+    background-color: #002b5c;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.footer-container .editor-block,
+.footer-container .footer-nav,
+.footer-container .team {
+    width: 100%;
+    max-width: 300px; /* Control the width */
+    margin: 0 auto;
+}
+
+.footer-container .footer-nav ul,
+.footer-container .team ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container .footer-nav li,
+.footer-container .team li {
+    margin: 10px 0;
+}
+
+.footer-container .footer-nav a,
+.footer-container .team a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container .footer-nav .head,
+.footer-container .team .head,
+.footer-container .editor-block .head {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Ensure footer looks good on small screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container .editor-block,
+    .footer-container .footer-nav,
+    .footer-container .team {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 20px;
+    }
+
+    .footer-container .footer-nav ul,
+    .footer-container .team ul {
+        text-align: center;
+    }
+}

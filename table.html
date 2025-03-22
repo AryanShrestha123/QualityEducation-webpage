@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table - Quality Education</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="table.css">
+    <link rel="icon" type="image/png" href="image/logoicon.png">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/table.css">
 </head>
 <body>
     <!-- Navbar -->
-    <header class="navbar">
-        <div class="logo"><a href="home.html">Quality Education</a></div>
-        <nav>
-            <ul>
-                <li><a href="splash.html">Splash</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="table.html" class="active">Table</a></li>
-                <li><a href="profile.html">User Profile</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="team.html">Team</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <b href="index.html" class="active">
+            <img src="image/logoicon.png" alt="QE Logo" class="icon">
+            <h2>Quality Education</h2>
+        </b> 
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="nav-links">
+          <a href="index.html">Splash</a>
+          <a href="home.html">Home</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="table.html"class="active">Table</a>
+          <a href="profile.html">User Profile</a>
+          <a href="feedback.html">Feedback</a>
+          <a href="sitemap.html">Sitemap</a>
+          <a href="team.html" >Team</a>
+        </div>
+      </nav>
 
     <main>
         <h2>Factors Affecting Quality Education</h2>
@@ -133,32 +137,50 @@
                 <p class="head">Editor Profile</p>
                 <p>This table page was designed by student 2.</p>
                 <p>For further information, click the link below to go to the editor's page of student 2</p>
-                <a href="pageEditor_ST2.html">Editor's Page</a>
+                <a href="pageEditor_ST2.html" class="editor-block-link">Editor's Page</a>
             </div>
 
-            <div class="hotlinks">
-                <p class="head">HotLinks</p>
+            <div class="footer-nav">
+                <p class="head">Navigation</p>
                 <ul>
-                    <li><a href="splash.html">Splash Page</a></li>
-                    <li><a href="home.html">Home Page</a></li>
-                    <li><a href="volunteer.html">Volunteer Page</a></li>
-                    <li><a href="table.html">Table Page</a></li>
-                    <li><a href="profile.html">User Profile Page</a></li>
-                    <li><a href="feedback.html">Feedback Page</a></li>
-                    <li><a href="sitemap.html">Sitemap Page</a></li>
-                    <li><a href="team.html">Team Page</a></li>
+                  <li><a href="index.html">Splash Page</a></li>
+                  <li><a href="home.html">Home Page</a></li>
+                  <li><a href="volunteer.html">Volunteer Page</a></li>
+                  <li><a href="table.html">Table Page</a></li>
+                  <li><a href="profile.html">User Profile Page</a></li>
+                  <li><a href="feedback.html">Feedback Page</a></li>
+                  <li><a href="sitemap.html">Sitemap Page</a></li>
+                  <li><a href="team.html">Team Page</a></li>
                 </ul>
-            </div>
-            <div class="team">
+              </div>
+              <div class="team">
                 <p class="head">Team Members</p>
                 <ul>
-                    <li><a href="pageEditor_ST1.html">Ankit Paudel</a></li>
-                    <li><a href="pageEditor_ST2.html">Aryan Shrestha</a></li>
-                    <li><a href="pageEditor_ST3.html">Bijay Bikram Dahal</a></li>
-                    <li><a href="pageEditor_ST4.html">Kaushal Khatri</a></li>
+                  <li><a href="pageEditor_ST1.html">Ankit Paudel</a></li>
+                  <li><a href="pageEditor_ST2.html">Aryan Shrestha</a></li>
+                  <li><a href="pageEditor_ST3.html">Bijay Bikram Dahal</a></li>
+                  <li><a href="pageEditor_ST4.html">Kaushal Khatri</a></li>
                 </ul>
+              </div>
             </div>
-        </div>
-    </footer>
+            <p style="color: tan">
+              Quality Education.&copy; <span id="year"></span> All rights reserved.
+            </p>
+        </footer>
+    
+        <!-- JavaScript for Mobile Menu -->
+        <script>
+          function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+          }
+          function toggleDetails(id) {
+            document.getElementById(id).classList.toggle("active");
+          }
+          // Get the current year
+          const currentYear = new Date().getFullYear();
+    
+          // Set the year in the span element with id 'year'
+          document.getElementById("year").textContent = currentYear;
+        </script>
 </body>
 </html>
