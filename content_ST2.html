@@ -4,65 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quality Education: Empowering Minds, Transforming Future</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="image/logoicon.png">
+    <link rel="stylesheet" href="css/st_content.css">
+    <link rel="stylesheet" href="css/styles.css">
     <style>
-        h1 {
-            padding: 20px;
-            font-size: 40px;
-            text-align: center;
-        }
-        .content {
-            margin: 20px 60px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 20px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-        }
-        .content h2 {
-            font-size: 30px;
-            color: rgb(51, 51, 51);
-            margin-top:5px;
-            margin-bottom: 5px;
-        }
-        .content ul{
-            margin-left: 15px;
-        }
-        .content ul li{
-            font-size: 18px;
-        }
-        .content p {
-            font-size: 15px;
-            color: rgb(85, 85, 85);
-            margin-bottom: 10px;
-        }
-        .image-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .image-container img {
-            width: 60%;
-            margin: 10px 0;
-            border-radius: 8px;
-        }
+       
     </style>
 </head>
 <body>
     <!-- Navbar -->
-    <header class="navbar">
-        <div class="logo"><a href="home.html">Quality Education</a></div>
-        <nav>
-            <ul>
-                <li><a href="splash.html">Splash</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="table.html">Table</a></li>
-                <li><a href="profile.html">User Profile</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="team.html">Team</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <b href="index.html" class="active">
+            <img src="image/logoicon.png" alt="QE Logo" class="icon">
+            <h2>Quality Education</h2>
+        </b> 
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="nav-links">
+          <a href="index.html">Splash</a>
+          <a href="home.html">Home</a>
+          <a href="content_ST1.html">Ankit Paudel</a>
+          <a href="content_ST2.html"class="active">Aryan Shrestha</a>
+          <a href="content_ST3.html">Bijay Bikram Dahal</a>
+          <a href="content_ST4.html">Kaushal Khatri</a>
+          <a href="team.html" >Team</a>
+        </div>
+      </nav>
 
     <main>
         <h1>Quality Education:<br>Empowering Minds, Transforming Future</h1>
@@ -87,7 +53,7 @@
             </ul>
 
             <div class="image-container">
-                <img src="images/content2_img1.webp" alt="Image 2">
+                <img src="image/content2_img1.webp" alt="Image 2">
             </div>
         </div>
 
@@ -108,7 +74,7 @@
             </ul>
 
             <div class="image-container">
-                <img src="images/content2_img2.webp" alt="Image 2">
+                <img src="image/content2_img2.webp" alt="Image 2">
             </div>
         
             <h2>How Can We Improve Quality Education?</h2>
@@ -124,13 +90,13 @@
                 <p class="head">Editor Profile</p>
                 <p>This content page was designed by student 2.</p>
                 <p>For further information, click the link below to go to the editor's page of student 2</p>
-                <a href="pageEditor_ST2.html">Editor's Page</a>
+                <a class="editor-block-link" href="pageEditor_ST2.html">Editor's Page</a>
             </div>
 
             <div class="footer-nav">
                 <p class="head">Navigation</p>
                 <ul>
-                    <li><a href="splash.html">Splash Page</a></li>
+                    <li><a href="index.html">Splash Page</a></li>
                     <li><a href="home.html">Home Page</a></li>
                     <li><a href="volunteer.html">Volunteer Page</a></li>
                     <li><a href="table.html">Table Page</a></li>
@@ -150,6 +116,24 @@
                 </ul>
             </div>
         </div>
-    </footer>
+        <p style="color: tan">
+            Quality Education.&copy; <span id="year"></span> All rights reserved.
+          </p>
+      </footer>
+  
+      <!-- JavaScript for Mobile Menu -->
+      <script>
+        function toggleMenu() {
+          document.querySelector(".nav-links").classList.toggle("active");
+        }
+        function toggleDetails(id) {
+          document.getElementById(id).classList.toggle("active");
+        }
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+  
+        // Set the year in the span element with id 'year'
+        document.getElementById("year").textContent = currentYear;
+      </script>
 </body>
 </html>

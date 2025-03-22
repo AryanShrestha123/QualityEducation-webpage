@@ -1,0 +1,166 @@
+/* Main Content */
+main {
+    margin: 30px 100px;
+}
+
+/* Table Styling */
+.table-container {
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #7b4d4d;
+    color: white;
+}
+
+/* Alternate row colors */
+tbody .even{
+    background-color: #f2f2f2;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    /* Adjust main content margin for larger tablets and small screens */
+    main {
+        margin: 30px 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Adjust main content margin for tablets */
+    main {
+        margin: 30px 20px;
+    }
+
+    /* Table adjustments for tablet and smaller screens */
+    table {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    th, td {
+        padding: 10px; /* Reduce padding for better readability */
+    }
+
+    /* Stack elements in the header and adjust nav links */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Smaller screens like mobile devices */
+    main {
+        margin: 20px 10px;
+    }
+
+    table {
+        font-size: 12px; /* Even smaller font size for mobile */
+    }
+
+    th, td {
+        padding: 8px; /* Reduce padding further */
+    }
+
+    /* Stack elements in the header */
+    .title {
+        text-align: center;
+    }
+
+    /* Adjust the volunteer programs section to stack vertically */
+    .volunteer-programs {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .program-card {
+        width: 100%; /* Make the cards take full width */
+        text-align: center;
+    }
+
+    /* Adjust buttons to be more compact */
+    .view-btn, .see-more-btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Adjust rating and review layout */
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rating-summary {
+        text-align: center;
+    }
+
+    .review-card {
+        width: 100%;
+    }
+
+    /* Feedback form adjustments */
+    .feedback-form form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For extra small screens like phones in portrait mode */
+    table {
+        font-size: 10px; /* Further reduce font size */
+    }
+
+    th, td {
+        padding: 6px; /* Further reduce padding */
+    }
+
+    .volunteer-programs {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .program-card {
+        width: 100%; /* Full-width cards */
+        text-align: center;
+    }
+
+    .view-btn, .see-more-btn {
+        width: 100%;
+        padding: 8px;
+    }
+}

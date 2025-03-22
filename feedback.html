@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback - Quality Education</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="feedback.css">
+    <link rel="icon" type="image/png" href="image/logoicon.png">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/feedback.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="logo"><a href="home.html">Quality Education</a></div>
-        <nav>
-            <ul>
-                <li><a href="splash.html">Splash</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="table.html">Table</a></li>
-                <li><a href="profile.html">User Profile</a></li>
-                <li><a href="feedback.html" class="active">Feedback</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="team.html">Team</a></li>
-            </ul>
-        </nav>
-    </header>
+   <!-- Navbar -->
+   <nav class="navbar">
+    <b href="index.html" class="active">
+        <img src="image/logoicon.png" alt="QE Logo" class="icon">
+        <h2>Quality Education</h2>
+    </b> 
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Splash</a>
+      <a href="home.html">Home</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="table.html">Table</a>
+      <a href="profile.html">User Profile</a>
+      <a href="feedback.html"class="active">Feedback</a>
+      <a href="sitemap.html">Sitemap</a>
+      <a href="team.html" >Team</a>
+    </div>
+  </nav>
 
     <main>
         <div class="feedback-form">
-            <h2>Feedback Form</h2>
+            <h2 style=" margin-bottom: 25px;
+            font-size: 28px;
+            text-align: center;
+            color: rgb(51, 51, 51);">Feedback Form</h2>
             <form>
                 <fieldset>
                     <legend>Personal Details</legend>
@@ -108,13 +115,13 @@
                 <p class="head">Editor Profile</p>
                 <p>This feedback page was designed by student 3.</p>
                 <p>For further information, click the link below to go to the editor's page of student 3</p>
-                <a href="pageEditor_ST3.html">Editor's Page</a>
+                <a class="editor-block-link" href="pageEditor_ST3.html">Editor's Page</a>
             </div>
 
             <div class="footer-nav">
                 <p class="head">Navigation</p>
                 <ul>
-                    <li><a href="splash.html">Splash Page</a></li>
+                    <li><a href="index.html">Splash Page</a></li>
                     <li><a href="home.html">Home Page</a></li>
                     <li><a href="volunteer.html">Volunteer Page</a></li>
                     <li><a href="table.html">Table Page</a></li>
@@ -134,6 +141,24 @@
                 </ul>
             </div>
         </div>
-    </footer>
+        <p style="color: tan">
+            Quality Education.&copy; <span id="year"></span> All rights reserved.
+          </p>
+        </footer>
+    
+        <!-- JavaScript for Mobile Menu -->
+        <script>
+          function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+          }
+          function toggleDetails(id) {
+            document.getElementById(id).classList.toggle("active");
+          }
+          // Get the current year
+          const currentYear = new Date().getFullYear();
+    
+          // Set the year in the span element with id 'year'
+          document.getElementById("year").textContent = currentYear;
+        </script>
 </body>
 </html>
