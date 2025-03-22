@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation Page-Aryan</title>
+    <link rel="icon" type="image/png" href="image/logoicon.png">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/team.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <b href="index.html" class="active">
+            <img src="image/logoicon.png" alt="QE Logo" class="icon">
+           <a class="active" href="index.html"><h2>Quality Validation</h2></a> 
+        </b> 
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="nav-links">
+            <!-- <a href="index.html">Splash</a> -->
+            <a href="home.html">Home</a>
+            <a href="validation1.html" >Ankit Paudel</a>
+            <a href="validation2.html" class="active">Aryan Shrestha</a>
+            <a href="validation3.html">Bijay Bikram Dahal</a>
+            <a href="validation4.html">Kaushal Khatri</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+<main>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet iure aspernatur, nam natus nisi incidunt porro eveniet sequi quos labore quisquam! Amet, incidunt. Rem dignissimos eum accusamus culpa deserunt. Unde!
+    Dolores, libero veritatis nemo officiis ipsum facilis ipsa eaque saepe architecto laudantium aut distinctio, quos quis blanditiis sapiente explicabo beatae deserunt praesentium, molestiae soluta id. Autem explicabo ea soluta dolore.
+    Exercitationem quam repellendus repudiandae magnam eaque. Repudiandae odio delectus deleniti a? Saepe neque, suscipit molestias quis porro reiciendis adipisci quaerat id voluptate perspiciatis fuga dolorum nulla illo laborum minus cumque?
+    Dolores consequuntur id non delectus ipsam libero doloribus adipisci aliquid ut doloremque harum, voluptatum amet minus ipsum porro dolor dolorum unde perspiciatis perferendis illum asperiores nulla aut! Accusamus, esse ut.
+    Mollitia atque doloribus itaque optio! Nemo officiis ipsum deserunt accusantium molestias adipisci vero nostrum consectetur. Ab, eum necessitatibus? Aperiam, assumenda debitis nisi a natus animi in molestias consequuntur optio officiis.
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="editor-block">
+                <p class="head">Editor Profile</p>
+                <p>This team page was designed by student 3.</p>
+                <p>For further information, click the link below to go to the editor's page of student 3</p>
+                <a class="editor-block-link" href="pageEditor_ST3.html">Editor's Page</a>
+            </div>
+
+            <div class="footer-nav">
+                <p class="head">Navigation</p>
+                <ul>
+                    <li><a href="index.html">Splash Page</a></li>
+                    <li><a href="home.html">Home Page</a></li>
+                    <li><a href="volunteer.html">Volunteer Page</a></li>
+                    <li><a href="table.html">Table Page</a></li>
+                    <li><a href="profile.html">User Profile Page</a></li>
+                    <li><a href="feedback.html">Feedback Page</a></li>
+                    <li><a href="sitemap.html">Sitemap Page</a></li>
+                    <li><a href="team.html">Team Page</a></li>
+                </ul>
+            </div>
+            <div class="team">
+                <p class="head">Team Members</p>
+                <ul>
+                    <li><a href="pageEditor_ST1.html">Ankit Paudel</a></li>
+                    <li><a href="pageEditor_ST2.html">Aryan Shrestha</a></li>
+                    <li><a href="pageEditor_ST3.html">Bijay Bikram Dahal</a></li>
+                    <li><a href="pageEditor_ST4.html">Kaushal Khatri</a></li>
+                </ul>
+                <p class="head"> <a href="validation1.html">Validation Page</a></p>
+
+            </div>
+        </div>
+        <p style="color: tan;">
+            Quality Education.&copy; <span id="year"></span> All rights reserved.
+        </p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+        function toggleDetails(id) {
+            document.getElementById(id).classList.toggle("active");
+        }
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+
+        // Set the year in the span element with id 'year'
+        document.getElementById("year").textContent = currentYear;
+
+    </script>
+</body>
+
+</html>
