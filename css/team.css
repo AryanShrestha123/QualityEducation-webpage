@@ -1,4 +1,20 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Body Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* TEAM SECTION */
 .team-intro, .join-section {
     text-align: center;
     margin-bottom: 20px;
@@ -11,15 +27,24 @@
     padding: 20px;
 }
 
-.member {
+.member, .job {
     background: white;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    min-height: 220px; /* Increased height to accommodate details */
 }
 
-.member img {
+.member:hover, .job:hover {
+    min-height: 280px; /* Expands height on hover */
+}
+
+/* Profile Image */
+.member img, .job img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -27,6 +52,7 @@
     margin-bottom: 10px;
 }
 
+/* Detail Button */
 .detail-button {
     background: #002b5c;
     color: white;
@@ -36,64 +62,83 @@
     margin-top: 10px;
 }
 
+/* Details Box */
 .details {
-    text-align: center;
     display: none;
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
     margin-top: 10px;
 }
 
-.details.active {
+
+.member:hover .details, .job:hover .details {
     display: block;
 }
+
 .details ul {
-    list-style-type: none; /* Removes bullets */
-    padding: 0; /* Removes default padding */
-  }
-  
-  .details ul li {
-    margin-top: 10px; /* Adds spacing between items */
-  }
-  
-  
-  .details a {
-    color: black !important; /* Keeps the text black */
-    text-decoration: none; /* Removes underline */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  
-  .details a:visited,
-  .details a:hover,
-  .details a:active {
-    color: black !important; /* Ensures color stays black in all states */
-  }
-
-  .imp-page{
-    font-family:sans-serif;
-    font-weight: 800;
-    margin-top: 5px;
-  }
-
-/* Reset Styles */
-* {
-    margin: 0;
+    list-style-type: none;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Body and Page Layout */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Full height */
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+.details ul li {
+    margin-top: 10px;
 }
 
-main {
-    flex: 1; /* Pushes the footer to bottom */
-    padding: 20px;
+.details a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}
+
+/* Apply Button */
+.apply-button {
+    display: block;
+    background-color: #28a745;
+    color: white;
     text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px;
 }
+
+.apply-button:hover {
+    background-color: #218838;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 970px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-container,
+    .job-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member,
+    .job {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .details {
+        width: 100%;
+    }
+}
+
+
 
 
 
@@ -144,7 +189,7 @@ main {
 
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 970px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -232,7 +277,7 @@ footer {
 }
 
 /* Ensure footer looks good on small screens */
-@media (max-width: 768px) {
+@media (max-width: 970px) {
     .footer-container {
         flex-direction: column;
         align-items: center;

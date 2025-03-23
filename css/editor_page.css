@@ -55,7 +55,7 @@ main {
 /* Responsive Design */
 
 /* Tablets */
-@media (max-width: 768px) {
+@media (max-width: 970px) {
     #volunteer {
         padding: 20px;
         max-width: 90%;

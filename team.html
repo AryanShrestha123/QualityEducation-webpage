@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <html lang="en">
     <title>Responsive Navbar & Footer</title>
-    <link rel="icon" type="image/png" href="image/logoicon.png">
+    <link rel="icon" type="image/png" href="image/logoicon.png" />
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/team.css" />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <b href="index.html" class="active">
-            <img src="image/logoicon.png" alt="QE Logo" class="icon">
-           <a class="active" href="index.html"><h2>Quality Education</h2></a> 
-        </b>  
-              <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <b href="index.html" class="active">
+        <img src="image/logoicon.png" alt="QE Logo" class="icon" />
+        <a class="active" href="index.html"><h2>Quality Education</h2></a>
+      </b>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
       <div class="nav-links">
         <!-- <a href="index.html">Splash</a> -->
         <a href="home.html">Home</a>
@@ -43,12 +43,6 @@
         <div class="member" id="ankit">
           <img src="image/member1.webp" alt="Ankit Paudel" />
           <h3>Ankit Paudel</h3>
-          <button
-            class="detail-button"
-            onclick="toggleDetails('ankit-details')"
-          >
-            Details
-          </button>
           <div class="details" id="ankit-details">
             <h4>Student 1</h4>
             <h4>Ankit Paudel</h4>
@@ -64,12 +58,6 @@
         <div class="member" id="aryan">
           <img src="image/member1.webp" alt="Aryan Shrestha" />
           <h3>Aryan Shrestha</h3>
-          <button
-            class="detail-button"
-            onclick="toggleDetails('aryan-details')"
-          >
-            Details
-          </button>
           <div class="details" id="aryan-details">
             <h4>Student 2</h4>
             <h4>Aryan Shrestha</h4>
@@ -85,12 +73,6 @@
         <div class="member" id="bijay">
           <img src="image/bijay.jpg" alt="Bijay Bikram Dahal" />
           <h3>Bijay Bikram Dahal</h3>
-          <button
-            class="detail-button"
-            onclick="toggleDetails('bijay-details')"
-          >
-            Details
-          </button>
           <div class="details" id="bijay-details">
             <h4>Student 3</h4>
             <h4>Bijay Bikram Dahal</h4>
@@ -106,12 +88,6 @@
         <div class="member" id="kaushal">
           <img src="image/member1.webp" alt="Kaushal Khatri" />
           <h3>Kaushal Khatri</h3>
-          <button
-            class="detail-button"
-            onclick="toggleDetails('kaushal-details')"
-          >
-            Details
-          </button>
           <div class="details" id="kaushal-details">
             <h4>Student 4</h4>
             <h4>Kaushal Khatri</h4>
@@ -133,45 +109,152 @@
           us.<br />Be a part of something amazing!
         </p>
       </section>
+      <section class="team-container">
+        <div class="job" id="software-dev">
+          <img src="image/software_dev.jpg" alt="Software Developer" />
+          <h3>Software Developer</h3>
+          <div class="details">
+              <h4>Location: Kathmandu</h4>
+              <h4>Company: Quality Education</h4>
+              <h4>Deadline: April 30, 2025</h4>
+              <h4>Experience: 2+ years in Software Development</h4> <!-- Added Experience -->
+              <p><strong>Job Description:</strong></p>
+              <p>We are looking for a Software Developer to design, develop, and maintain software applications. The ideal candidate should have experience in coding, problem-solving, and working with various programming languages.</p> <!-- Added Job Description -->
+      
+              <p><strong>Required Skills:</strong></p>
+              <ul>
+                  <li>Proficiency in JavaScript, Python, or Java</li>
+                  <li>Experience with web development frameworks (e.g., React, Angular, Django)</li>
+                  <li>Understanding of database management and SQL</li>
+                  <li>Version control (Git)</li>
+              </ul> <!-- Added Skills Required -->
+      
+              <p><strong>Salary Range:</strong> $2,500 - $4,000 per month</p> <!-- Added Salary Range -->
+      
+              <a href="mailto:job@qualityeducation.com?subject=Application for Software Developer" class="apply-button">Apply Now</a>
+          </div>
+      </div>
+      
+      <div class="job" id="project-manager">
+          <img src="image/project_manager.jpg" alt="Project Manager" />
+          <h3>Project Manager</h3>
+          <div class="details">
+              <h4>Location: Lalitpur</h4>
+              <h4>Company: Quality Education</h4>
+              <h4>Deadline: April 25, 2025</h4>
+              <h4>Experience: 5+ years in Project Management</h4> <!-- Added Experience -->
+              <p><strong>Job Description:</strong></p>
+              <p>We are seeking a skilled Project Manager to oversee our education projects. You will be responsible for coordinating teams, ensuring project timelines are met, and managing resources effectively.</p> <!-- Added Job Description -->
+      
+              <p><strong>Required Skills:</strong></p>
+              <ul>
+                  <li>Proven experience in project management</li>
+                  <li>Strong leadership and team coordination skills</li>
+                  <li>Knowledge of project management software (e.g., JIRA, Trello, Asana)</li>
+                  <li>Excellent communication and problem-solving skills</li>
+              </ul> <!-- Added Skills Required -->
+      
+              <p><strong>Salary Range:</strong> $4,000 - $5,500 per month</p> <!-- Added Salary Range -->
+      
+              <a href="mailto:job@qualityeducation.com?subject=Application for Project Manager" class="apply-button">Apply Now</a>
+          </div>
+      </div>
+      
+      <div class="job" id="cloud-engineer">
+          <img src="image/cloud_engineer.jpg" alt="Cloud Engineer" />
+          <h3>Cloud Engineer</h3>
+          <div class="details">
+              <h4>Location: Bhaktapur</h4>
+              <h4>Company: Quality Education</h4>
+              <h4>Deadline: April 28, 2025</h4>
+              <h4>Experience: 3+ years in Cloud Engineering</h4> <!-- Added Experience -->
+              <p><strong>Job Description:</strong></p>
+              <p>As a Cloud Engineer, you will be responsible for deploying and maintaining cloud infrastructure. You will work with technologies like AWS, Google Cloud, or Azure to ensure scalable and reliable cloud environments.</p> <!-- Added Job Description -->
+      
+              <p><strong>Required Skills:</strong></p>
+              <ul>
+                  <li>Proficiency in cloud platforms (AWS, GCP, Azure)</li>
+                  <li>Experience with infrastructure-as-code (e.g., Terraform, CloudFormation)</li>
+                  <li>Familiarity with containerization (Docker, Kubernetes)</li>
+                  <li>Strong knowledge of networking and security protocols</li>
+              </ul> <!-- Added Skills Required -->
+      
+              <p><strong>Salary Range:</strong> $3,500 - $5,000 per month</p> <!-- Added Salary Range -->
+      
+              <a href="mailto:job@qualityeducation.com?subject=Application for Cloud Engineer" class="apply-button">Apply Now</a>
+          </div>
+      </div>
+      
+
+        <div class="job" id="linux-admin">
+          <img src="image/linux_admin.png" alt="Linux Administrator" />
+          <h3>Linux Administrator</h3>
+          <div class="details">
+              <h4>Location: Pokhara</h4>
+              <h4>Company: Quality Education</h4>
+              <h4>Deadline: May 5, 2025</h4>
+              <h4>Experience: 3+ years in Linux Administration</h4> <!-- Added Experience -->
+              <p><strong>Job Description:</strong></p>
+              <p>We are seeking an experienced Linux Administrator to manage our server infrastructure. You will be responsible for setting up and maintaining our systems and ensuring high availability and security.</p> <!-- Added Job Description -->
+              
+              <p><strong>Required Skills:</strong></p>
+              <ul>
+                  <li>Linux/Unix Administration</li>
+                  <li>Networking and Security</li>
+                  <li>Virtualization and Cloud Platforms</li>
+                  <li>Problem-Solving Skills</li>
+              </ul> <!-- Added Skills Required -->
+      
+              <p><strong>Salary Range:</strong> $3,000 - $4,500 per month</p> <!-- Added Salary Range -->
+      
+              <a href="mailto:job@qualityeducation.com?subject=Application for Linux Administrator" class="apply-button">Apply Now</a>
+          </div>
+      </div>
+      
+      </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <div class="editor-block">
-                <p class="head">Editor Profile</p>
-                <p>This team page was designed by student 3.</p>
-                <p>For further information, click the link below to go to the editor's page of student 3</p>
-                <a class="editor-block-link" href="pageEditor_ST3.html">Editor's Page</a>
-            </div>
-
-            <div class="footer-nav">
-                <p class="head">Navigation</p>
-                <ul>
-                    <li><a href="index.html">Splash Page</a></li>
-                    <li><a href="home.html">Home Page</a></li>
-                    <li><a href="volunteer.html">Volunteer Page</a></li>
-                    <li><a href="table.html">Table Page</a></li>
-                    <li><a href="profile.html">User Profile Page</a></li>
-                    <li><a href="feedback.html">Feedback Page</a></li>
-                    <li><a href="sitemap.html">Sitemap Page</a></li>
-                    <li><a href="team.html">Team Page</a></li>
-                </ul>
-            </div>
-            <div class="team">
-                <p class="head">Team Members</p>
-                <ul>
-                    <li><a href="pageEditor_ST1.html">Ankit Paudel</a></li>
-                    <li><a href="pageEditor_ST2.html">Aryan Shrestha</a></li>
-                    <li><a href="pageEditor_ST3.html">Bijay Bikram Dahal</a></li>
-                    <li><a href="pageEditor_ST4.html">Kaushal Khatri</a></li>
-                </ul>
-                <p class="head"> <a href="validation1.html">Validation Page</a></p>
-
-            </div>
+      <div class="footer-container">
+        <div class="editor-block">
+          <p class="head">Editor Profile</p>
+          <p>This team page was designed by student 3.</p>
+          <p>
+            For further information, click the link below to go to the editor's
+            page of student 3
+          </p>
+          <a class="editor-block-link" href="pageEditor_ST3.html"
+            >Editor's Page</a
+          >
         </div>
-      <p style="color: tan;">
-         Quality Education.&copy; <span id="year"></span> All rights reserved.
+
+        <div class="footer-nav">
+          <p class="head">Navigation</p>
+          <ul>
+            <li><a href="index.html">Splash Page</a></li>
+            <li><a href="home.html">Home Page</a></li>
+            <li><a href="volunteer.html">Volunteer Page</a></li>
+            <li><a href="table.html">Table Page</a></li>
+            <li><a href="profile.html">User Profile Page</a></li>
+            <li><a href="feedback.html">Feedback Page</a></li>
+            <li><a href="sitemap.html">Sitemap Page</a></li>
+            <li><a href="team.html">Team Page</a></li>
+          </ul>
+        </div>
+        <div class="team">
+          <p class="head">Team Members</p>
+          <ul>
+            <li><a href="pageEditor_ST1.html">Ankit Paudel</a></li>
+            <li><a href="pageEditor_ST2.html">Aryan Shrestha</a></li>
+            <li><a href="pageEditor_ST3.html">Bijay Bikram Dahal</a></li>
+            <li><a href="pageEditor_ST4.html">Kaushal Khatri</a></li>
+          </ul>
+          <p class="head"><a href="validation1.html">Validation Page</a></p>
+        </div>
+      </div>
+      <p style="color: tan">
+        Quality Education.&copy; <span id="year"></span> All rights reserved.
       </p>
     </footer>
 
@@ -188,7 +271,6 @@
 
       // Set the year in the span element with id 'year'
       document.getElementById("year").textContent = currentYear;
-      
     </script>
   </body>
 </html>
