@@ -59,7 +59,7 @@ li {
 /* ----- RESPONSIVENESS ----- */
 
 /* Tablets */
-@media (max-width: 768px) {
+@media (max-width: 970px) {
     .splash-screen {
         padding: 4vw;
         max-width: 90%;

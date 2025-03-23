@@ -73,7 +73,7 @@ tbody .even{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 970px) {
     /* Smaller screens like mobile devices */
     main {
         margin: 20px 10px;

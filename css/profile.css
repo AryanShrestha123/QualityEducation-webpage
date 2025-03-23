@@ -147,7 +147,7 @@ h3 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 970px) {
     .profile-card {
         flex-basis: 100%;
     }

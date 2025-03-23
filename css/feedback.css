@@ -106,7 +106,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 970px) {
     .feedback-form {
         width: 90%;
         padding: 10px;

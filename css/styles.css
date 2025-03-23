@@ -177,7 +177,7 @@ footer {
 }
 
 /* Ensure footer looks good on small screens */
-@media (max-width: 768px) {
+@media (max-width: 970px) {
     .footer-container {
         flex-direction: column;
         align-items: center;
